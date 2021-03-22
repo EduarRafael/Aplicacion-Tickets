@@ -66,6 +66,7 @@ class recorteRegion(QDialog):
         ROIs = cv2.selectROIs("Imagen",self.aux)
         cv2.destroyWindow("Imagen")
         for x in range (len(ROIs)):
+            #Falta verificar sí la region se selecciono del punto inicial y termino arriba del mismo
             listaPuntos = [
                 [ROIs[x][0],ROIs[x][1]],[ROIs[x][2],ROIs[x][1]],[ROIs[x][0],ROIs[x][3]],[ROIs[x][2],ROIs[x][3]]
             ]
