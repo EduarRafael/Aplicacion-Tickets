@@ -3,6 +3,8 @@ import sys
 import cv2
 import ctypes
 import numpy as np
+import subprocess
+from sys import platform
 from functools import partial
 
 #Importaciones de PyQt5
@@ -26,9 +28,23 @@ class recorteRegion(QDialog):
         self.aux = None
         self.nombreTicket=""
         ##
-        user32 = ctypes.windll.user32
-        user32.SetProcessDPIAware()
-        self.anchowin, self.alturawin = user32.GetSystemMetrics(0), user32.GetSystemMetrics(1)
+        #Declaracion de variables e identificacion de tamaño de la ventana que se esta usando 
+        if platform == "linux" or platform == "linux2":
+            size = (None, None)
+            args = ["xrandr", "-q", "-d", ":0"]
+            proc = subprocess.Popen(args,stdout=subprocess.PIPE)
+            for line in proc.stdout:
+                if isinstance(line, bytes):
+                    line = line.decode("utf-8")
+                    if "Screen" in line:
+                        size = (int(line.split()[7]),  int(line.split()[9][:-1]))
+            self.anchowin, self.alturawin= size[0],size[1]
+        elif platform == "darwin":
+            pass # OS X
+        elif platform == "win32":
+            user32 = ctypes.windll.user32
+            user32.SetProcessDPIAware()
+            self.anchowin, self.alturawin = user32.GetSystemMetrics(0), user32.GetSystemMetrics(1)
         self.anchoImg = round(45/100*self.anchowin)
         self.alturaImg = round(45/100*self.alturawin)
         #

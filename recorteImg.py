@@ -38,7 +38,7 @@ def calcularDistancias(puntos=[]):
     return ancho,alto
 
 def recortarImagen(imagen,puntos=[]):
-    #print(puntos)
+    #                             print(puntos)
     sizeimg = calcularDistancias(puntos)
     pts1= np.float32([puntos])
     pts2 = np.float32([[0,0],[sizeimg[0],0],[0,sizeimg[1]],[sizeimg[0],sizeimg[1]]])
@@ -139,10 +139,17 @@ def guardarJson(listaTickets,dicImagenes):
                     pass
                 elif len(regiones)>=1:#En dado caso de tener regiones se agregan los nombres y coorenadas de la region correspondiente
                     arrayRegionesCoords = listaTickets[x][j].getCoordsRegiones()
+                    #print(arrayRegionesCoords)
                     arrayNombresRegiones = listaTickets[x][j].getNombresRegiones()
                     for i in range(len(arrayNombresRegiones)):
                         dicregion["Regiones"].append({"NomRegion":arrayNombresRegiones[i],"Coords":arrayRegionesCoords[i]})
                     dicTicket["Ticket"].append(dicregion)#Se agregan las regiones al ticket
+            #print(dicTicket)
             dicImagenes["Imagenes"]["Imagen_"+str(x)].append(dicTicket)#Se agrega el ticket y sus correspondientes regiones a la imagen correspondiente
-    with open('data.json', 'w') as file:#El archivo se guarda con el nombre data.json
-        json.dump(dicImagenes, file, indent=2)#Se le pasa el diccionario con las imagenes, con sus correspondientes ticketes y las correspondientes regiones por ticket
+            #dicImagenes["Imagenes"]["Imagen_"+str(x)].append({"Nomticket":nombreticket,"CoordsTicket":coordsTicket})
+    print(dicImagenes["Imagenes"])
+    #with open('data.json', 'w') as file:#El archivo se guarda con el nombre data.json
+        #json.dump(dicImagenes, file, indent=2)#Se le pasa el diccionario con las imagenes, con sus correspondientes ticketes y las correspondientes regiones por ticket
+
+def cargarArchivo():
+    pass

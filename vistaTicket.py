@@ -5,7 +5,8 @@ import ctypes
 import numpy as np
 from functools import partial
 from fuzzywuzzy import process
-
+from sys import platform
+import subprocess
 #Importaciones de PyQt5
 from PyQt5 import QtWidgets,QtGui,QtCore
 from PyQt5.QtCore import *
@@ -27,8 +28,23 @@ class vistaTicket(QDialog):
         self.auximg = None
         self.TicketAux = None
         self.nuevaRegion = False
-        user32 = ctypes.windll.user32
-        user32.SetProcessDPIAware()
+        #Declaracion de variables e identificacion de tamaño de la ventana que se esta usando 
+        if platform == "linux" or platform == "linux2":
+            size = (None, None)
+            args = ["xrandr", "-q", "-d", ":0"]
+            proc = subprocess.Popen(args,stdout=subprocess.PIPE)
+            for line in proc.stdout:
+                if isinstance(line, bytes):
+                    line = line.decode("utf-8")
+                    if "Screen" in line:
+                        size = (int(line.split()[7]),  int(line.split()[9][:-1]))
+            self.anchowin, self.alturawin= size[0],size[1]
+        elif platform == "darwin":
+            pass # OS X
+        elif platform == "win32":
+            user32 = ctypes.windll.user32
+            user32.SetProcessDPIAware()
+            self.anchowin, self.alturawin = user32.GetSystemMetrics(0), user32.GetSystemMetrics(1)
         self.auxParent = parent
         self.recorteRegionD = recorteRegion(self)
         self.anchowin, self.alturawin = user32.GetSystemMetrics(0), user32.GetSystemMetrics(1)
@@ -65,6 +81,7 @@ class vistaTicket(QDialog):
                 imgW = round(37/100*self.anchowin)
                 imgH = round(78.7/100*self.alturawin)
                 imgRegion = imgRegion.scaled(imgW,imgH)
+                self.comboRegion.setCurrentIndex(0)
                 self.imagen_ticketlabel.setPixmap(imgRegion)
 
     def closeEvent(self,evnt):

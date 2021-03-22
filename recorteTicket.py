@@ -4,6 +4,8 @@ import cv2
 import ctypes
 import numpy as np
 from functools import partial
+from sys import platform
+import subprocess
 
 #Importaciones de PyQt5
 from PyQt5 import QtWidgets,QtGui,QtCore
@@ -24,9 +26,23 @@ class recorteTicket(QDialog):
         self.aux = None
         self.nombreImagen=""
         self.indiceImagen = 0
-        user32 = ctypes.windll.user32
-        user32.SetProcessDPIAware()
-        self.anchowin, self.alturawin = user32.GetSystemMetrics(0), user32.GetSystemMetrics(1)
+        #Declaracion de variables e identificacion de tamaño de la ventana que se esta usando 
+        if platform == "linux" or platform == "linux2":
+            size = (None, None)
+            args = ["xrandr", "-q", "-d", ":0"]
+            proc = subprocess.Popen(args,stdout=subprocess.PIPE)
+            for line in proc.stdout:
+                if isinstance(line, bytes):
+                    line = line.decode("utf-8")
+                    if "Screen" in line:
+                        size = (int(line.split()[7]),  int(line.split()[9][:-1]))
+            self.anchowin, self.alturawin= size[0],size[1]
+        elif platform == "darwin":
+            pass # OS X
+        elif platform == "win32":
+            user32 = ctypes.windll.user32
+            user32.SetProcessDPIAware()
+            self.anchowin, self.alturawin = user32.GetSystemMetrics(0), user32.GetSystemMetrics(1)
         self.anchoImg = round(85/100*self.anchowin)
         self.alturaImg = round(85/100*self.alturawin)
         self.recorteLabel.setMaximumWidth(self.anchoImg)
@@ -39,10 +55,7 @@ class recorteTicket(QDialog):
 
     #Evento para cerrar/guardar la imagen cortada
     def gurdar(self,parent):
-        imgW = round(37/100*self.anchowin)
-        imgH = round(68/100*self.alturawin)
-        self.imagenPixMap = self.imagenPixMap.scaled(imgW,imgH)
-        parent.img_ticket.setPixmap(self.imagenPixMap)
+        
         self.recorteLabel.hide()
         parent.img_ticket.show()
         self.textLabel.show()
@@ -58,6 +71,12 @@ class recorteTicket(QDialog):
         #print(parent.listaTickets[self.indiceImagen])
         indice= countTickets + cont -2
         parent.comboTicket.setCurrentIndex(indice)
+        imgW = round(37/100*self.anchowin)
+        imgH = round(68/100*self.alturawin)
+        img = recortarImagen(self.aux,self.puntos[cont-2])
+        img = formatoPixMap(img)
+        img = img.scaled(imgW,imgH)
+        parent.img_ticket.setPixmap(img)
         self.close()
 
     #Evento para cortar la imagen
