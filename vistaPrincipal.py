@@ -38,7 +38,8 @@ class  mainWindow(QDialog):
         self.vistaTicketD = vistaTicket(self)
         #Declaracion de eventos de los botones/widgets
         self.botonAbrir.clicked.connect(self.abirRepo)#Evento para el botonAbrir
-        self.listImagenes.clicked.connect(self.selectImg)#Evento para el listWidget
+        self.listImagenes.clicked.connect(self.selectImg)#Evento para listWidget
+        self.listImagenes.activated.connect(self.selectImg)#Evento para listWidget
         self.recortarTicket.clicked.connect(self.recortarTDialog)
         self.btnvistaTicket.clicked.connect(self.vistaTicketDialog)
         self.btnEliminarTicket.clicked.connect(self.eliminarTicket)
@@ -130,7 +131,7 @@ class  mainWindow(QDialog):
         numTickets= self.comboTicket.count()
         if(numTickets>=1):
             qm = QMessageBox
-            ret = qm.question(self,'', "¿Queires eliminar este ticket?", qm.Yes | qm.No)
+            ret = qm.question(self,'', "¿Estas seguro de eliminar este ticket? Esta accion no se puede revertir", qm.Yes | qm.No)
 
             if ret == qm.Yes:
                 self.indiceTicket = self.comboTicket.currentIndex()
@@ -213,6 +214,7 @@ class  mainWindow(QDialog):
             imgH = round(78.7/100*self.alturawin)
             imgLabel = imgLabel.scaled(imgW,imgH)
             self.vistaTicketD.imagen_ticketlabel.setPixmap(imgLabel)
+            self.vistaTicketD.TicketAux = self.listaTickets[self.indice][self.indiceTicket]
             self.vistaTicketD.show()
         elif(numTickets==0):
             msg = QMessageBox()

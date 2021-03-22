@@ -24,19 +24,16 @@ class recorteRegion(QDialog):
         loadUi("msgRecorte2.ui",self)
         self.imagen = None
         self.aux = None
-        self.nombreRegion=""
-        self.indiceTicket = 0
+        self.nombreTicket=""
+        ##
         user32 = ctypes.windll.user32
         user32.SetProcessDPIAware()
         self.anchowin, self.alturawin = user32.GetSystemMetrics(0), user32.GetSystemMetrics(1)
         self.anchoImg = round(45/100*self.anchowin)
         self.alturaImg = round(45/100*self.alturawin)
+        #
         self.recorteLabel.setMaximumWidth(self.anchoImg)
         self.recorteLabel.setMaximumHeight(self.alturaImg)
-        self.cortarImagenbtn.hide()
-        self.guardarbtn.hide()
-        self.comboNuevasRegiones.hide()
-        self.labelRegionMsg.hide()
         self.continuarbtn.clicked.connect(self.cortarImagen)
         self.cortarImagenbtn.clicked.connect(self.cortarImagen)
         self.guardarbtn.clicked.connect(partial(self.gurdar,parent))
@@ -44,8 +41,32 @@ class recorteRegion(QDialog):
 
     #Evento para cerrar/guardar la imagen cortada
     def gurdar(self,parent):
-        #Falta agregar el codigo para guardar las regiones seleccionadas mediante el metodo ROIs
-        pass
+        countRegiones = parent.comboRegion.count()
+        cont=1
+        for x in range(len(self.puntos)):
+            nombreRegion = "Region_"+str(countRegiones+cont)+"_"+self.nombreTicket
+            parent.TicketAux.nuevaRegion(nombreRegion,self.puntos[x])
+            parent.comboRegion.addItem(nombreRegion)
+            cont+=1
+        indice = countRegiones+cont-2
+        parent.comboRegion.setCurrentIndex(indice)
+        parent.nuevaRegion = True
+        indexRegion = parent.comboRegion.currentIndex()
+        coords = parent.TicketAux.getCoordsRegionbyIndex(indexRegion)
+        auxImagen = parent.imagenTicket.copy()
+        imgRegion = dibujarRegion(auxImagen,coords)
+        imgRegionSola = recortarImagen(parent.imagenTicket,coords)
+        texto = procesarTexto(parent.imagenTicket,coords)
+        parent.txtOCR.setPlainText(texto)
+        imgRegionSola = recortarImagen(parent.imagenTicket,coords)
+        imgRegionSola = formatoPixMap(imgRegionSola)
+        parent.imagen_region.setPixmap(imgRegionSola)
+        imgRegion = formatoPixMap(imgRegion)
+        imgW = round(37/100*parent.anchowin)
+        imgH = round(78.7/100*parent.alturawin)
+        imgRegion = imgRegion.scaled(imgW,imgH)
+        parent.imagen_ticketlabel.setPixmap(imgRegion)
+        self.close()     
 
     def cambioRegion(self):
         self.aux = self.imagen.copy()
@@ -77,15 +98,21 @@ class recorteRegion(QDialog):
         #        
         for i in range (len(ROIs)):
             self.comboNuevasRegiones.addItem("Region "+str(i+1))
-        self.dst = recortarImagen(self.aux,self.puntos[0])
-        self.cortarImagenbtn.show()
-        self.guardarbtn.show()
-        self.comboNuevasRegiones.show()
-        self.labelRegionMsg.show()
-        self.imagenPixMap = formatoPixMap(self.dst)
-        self.imagenPixMap = self.imagenPixMap.scaled(self.anchoImg,self.alturaImg)
-        self.recorteLabel.setPixmap(self.imagenPixMap)
-        self.recorteLabel.show()
-        self.move(50,50)
-        self.textLabel.hide()
-        #nombreRegion = "Region_"+str(x+1)+"_"+nomticket#Nombre del ticket
+        if len(self.puntos)>=1:
+            self.dst = recortarImagen(self.aux,self.puntos[0])
+            self.cortarImagenbtn.show()
+            self.guardarbtn.show()
+            self.comboNuevasRegiones.show()
+            self.labelRegionMsg.show()
+            self.imagenPixMap = formatoPixMap(self.dst)
+            self.imagenPixMap = self.imagenPixMap.scaled(self.anchoImg,self.alturaImg)
+            self.recorteLabel.setPixmap(self.imagenPixMap)
+            self.recorteLabel.show()
+            self.move(50,50)
+            self.textLabel.hide()
+        else:
+            msg = QMessageBox()
+            msg.setText("Las regiones no se guardaron correctamente, porfavor seguir las instrucciones mostradas en pantalla")
+            msg.setWindowTitle("Error")
+            msg.exec_()
+            self.continuarbtn.show()
