@@ -9,7 +9,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>745</width>
+    <width>744</width>
     <height>463</height>
    </rect>
   </property>
@@ -26,21 +26,10 @@
    <bool>true</bool>
   </property>
   <layout class="QGridLayout" name="gridLayout">
-   <item row="13" column="0" colspan="2">
-    <widget class="QPushButton" name="cortarImagenbtn">
-     <property name="font">
-      <font>
-       <pointsize>10</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="text">
-      <string>Seleccionar nueva region de imagen</string>
-     </property>
-    </widget>
+   <item row="8" column="2">
+    <widget class="QComboBox" name="comboNuevasRegiones"/>
    </item>
-   <item row="13" column="2">
+   <item row="14" column="2">
     <widget class="QPushButton" name="guardarbtn">
      <property name="font">
       <font>
@@ -51,6 +40,20 @@
      </property>
      <property name="text">
       <string>Guardar regiones seleccionadas</string>
+     </property>
+    </widget>
+   </item>
+   <item row="14" column="0" colspan="2">
+    <widget class="QPushButton" name="cortarImagenbtn">
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Seleccionar nueva region de imagen</string>
      </property>
     </widget>
    </item>
@@ -71,7 +74,7 @@
      </property>
     </widget>
    </item>
-   <item row="5" column="0" colspan="3">
+   <item row="4" column="0" colspan="3">
     <widget class="QPushButton" name="continuarbtn">
      <property name="font">
       <font>
@@ -85,7 +88,27 @@
      </property>
     </widget>
    </item>
-   <item row="4" column="0" colspan="3">
+   <item row="5" column="2">
+    <widget class="QLabel" name="labelRegionMsg">
+     <property name="maximumSize">
+      <size>
+       <width>80</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Regiones</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0" colspan="3">
     <widget class="QLabel" name="recorteLabel">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Minimum" vsizetype="Maximum">

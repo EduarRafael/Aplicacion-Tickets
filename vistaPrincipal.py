@@ -30,7 +30,6 @@ class  mainWindow(QDialog):
         self.anchowin, self.alturawin = user32.GetSystemMetrics(0), user32.GetSystemMetrics(1)
         self.anchoImg = round(85/100*self.anchowin)
         self.alturaImg = round(85/100*self.alturawin)
-        self.contImg=0
         self.contRegiones=0
         self.imagenSeleccionada = False
         #Declaracion de objetos de las vistas
@@ -94,7 +93,6 @@ class  mainWindow(QDialog):
         self.imagencv2 = cv2.imread(ruta)
         self.indice = self.listImagenes.currentRow()
         self.imagenSeleccionada = True
-        self.contImg = 0
         #print(len(self.listaTickets[self.indice]))
         if(len(self.listaTickets[self.indice])==0):
             self.img_ticket.hide()
@@ -132,7 +130,6 @@ class  mainWindow(QDialog):
         if(numTickets>=1):
             qm = QMessageBox
             ret = qm.question(self,'', "¿Estas seguro de eliminar este ticket? Esta accion no se puede revertir", qm.Yes | qm.No)
-
             if ret == qm.Yes:
                 self.indiceTicket = self.comboTicket.currentIndex()
                 self.comboTicket.removeItem(self.indiceTicket)
@@ -167,6 +164,8 @@ class  mainWindow(QDialog):
         elif(self.imagenSeleccionada == True):
             self.recorteTicketD.cortarImagenbtn.hide()
             self.recorteTicketD.guardarbtn.hide()
+            self.recorteTicketD.comboNuevasRegiones.hide()
+            self.recorteTicketD.labelRegionMsg.hide()
             self.recorteTicketD.continuarbtn.show()
             #
             imgW = round(39/100*self.anchowin)
@@ -177,8 +176,7 @@ class  mainWindow(QDialog):
             #
             self.recorteTicketD.imagen = self.imagencv2
             self.recorteTicketD.indiceImagen= self.indice
-            self.contImg=self.comboTicket.count()+1
-            self.recorteTicketD.nombreTicket= "Ticket_"+str(self.contImg)+"_"+self.nombreImagen
+            self.recorteTicketD.nombreImagen= self.nombreImagen
             #
             self.recorteTicketD.show()
 

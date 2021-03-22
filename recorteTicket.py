@@ -22,7 +22,7 @@ class recorteTicket(QDialog):
         loadUi("msgRecorte.ui",self)
         self.imagen = None
         self.aux = None
-        self.nombreTicket=""
+        self.nombreImagen=""
         self.indiceImagen = 0
         user32 = ctypes.windll.user32
         user32.SetProcessDPIAware()
@@ -41,53 +41,74 @@ class recorteTicket(QDialog):
     def gurdar(self,parent):
         imgW = round(37/100*self.anchowin)
         imgH = round(68/100*self.alturawin)
-
         self.imagenPixMap = self.imagenPixMap.scaled(imgW,imgH)
         parent.img_ticket.setPixmap(self.imagenPixMap)
         self.recorteLabel.hide()
         parent.img_ticket.show()
         self.textLabel.show()
         listaux = []
-        if len(parent.listaTickets[self.indiceImagen])==0:
-            listaux.append(Ticket(self.nombreTicket,self.puntos))
-            parent.listaTickets[self.indiceImagen] = listaux
-            #print(parent.listaTickets[self.indiceImagen])
-        else:
-            listaux = parent.listaTickets[self.indiceImagen]
-            listaux.append(Ticket(self.nombreTicket,self.puntos))
-            parent.listaTickets[self.indiceImagen] = listaux
-            #print(parent.listaTickets[self.indiceImagen])
-        parent.comboTicket.addItem(self.nombreTicket)
-        parent.comboTicket.setCurrentIndex(parent.contImg-1)
+        countTickets = parent.comboTicket.count()
+        cont=1
+        for x in range(len(self.puntos)):
+            nombreTicket = "Ticket_"+str(countTickets+cont)+"_"+self.nombreImagen
+            listaux.append(Ticket(nombreTicket,self.puntos[x]))
+            parent.comboTicket.addItem(nombreTicket)
+            cont+=1
+        parent.listaTickets[self.indiceImagen] = listaux
+        #print(parent.listaTickets[self.indiceImagen])
+        indice= countTickets + cont -2
+        parent.comboTicket.setCurrentIndex(indice)
         self.close()
 
     #Evento para cortar la imagen
 
-    #Se tiene que actualizar este evento para utilizar el Recorte ROIs
+    def cambioRegion(self):
+        self.aux = self.imagen.copy()
+        index = self.comboNuevasRegiones.currentIndex()
+        img = recortarImagen(self.aux,self.puntos[index])
+        img = formatoPixMap(img)
+        img = img.scaled(self.anchoImg,self.alturaImg)
+        self.recorteLabel.setPixmap(img)
+
+    #Evento para cortar la imagen
     def cortarImagen(self):
+        self.comboNuevasRegiones.clear()
+        self.recorteLabel.hide()
         self.continuarbtn.hide()
         self.puntos=[]
+        listaPuntos = []
         self.aux = self.imagen.copy()
         cv2.namedWindow("Imagen",cv2.WINDOW_NORMAL)
-        cv2.setMouseCallback("Imagen",self.clics)
         cv2.resizeWindow("Imagen",self.anchoImg,self.alturaImg)
-        cv2.imshow("Imagen",self.aux)
-    
-
-    #Evento de mouse de opencv para cortar la imagen
-    def clics(self,event,x,y,falgs,param):
-        if event == cv2.EVENT_LBUTTONDOWN:
-            cv2.circle(self.aux,(x,y),25,(0,255,0),8)
-            self.puntos.append([x,y])
-            cv2.imshow("Imagen",self.aux) 
-        if len(self.puntos) ==4:
-            self.dst = recortarImagen(self.imagen,self.puntos)
-            cv2.destroyWindow("Imagen")
+        ROIs = cv2.selectROIs("Imagen",self.aux)
+        cv2.destroyWindow("Imagen")
+        for rect in ROIs:#Añade todos los recortes a la variable puntos
+            x1=rect[0]
+            y1=rect[1]
+            x2=rect[2]
+            y2=rect[3]
+            listaPuntos = [[x1,y1],[(x2+x1),y1],[x1,(y1+y2)],[(x1+x2),(y1+y2)]]
+            self.puntos.append(listaPuntos)
+        #        
+        for i in range (len(ROIs)):
+            self.comboNuevasRegiones.addItem("Region "+str(i+1))
+        if len(self.puntos)>=1:
+            self.dst = recortarImagen(self.aux,self.puntos[0])
             self.cortarImagenbtn.show()
             self.guardarbtn.show()
+            self.comboNuevasRegiones.show()
+            self.labelRegionMsg.show()
             self.imagenPixMap = formatoPixMap(self.dst)
-            self.imagenPixMap = self.imagenPixMap.scaled(self.anchoImg,self.alturaImg)
+            imgW = round(37/100*self.anchowin)
+            imgH = round(68/100*self.alturawin)
+            self.imagenPixMap = self.imagenPixMap.scaled(imgW,imgH)
             self.recorteLabel.setPixmap(self.imagenPixMap)
             self.recorteLabel.show()
             self.move(50,50)
             self.textLabel.hide()
+        else:
+            msg = QMessageBox()
+            msg.setText("Las regiones no se guardaron correctamente, porfavor seguir las instrucciones mostradas en pantalla")
+            msg.setWindowTitle("Error")
+            msg.exec_()
+            self.continuarbtn.show()

@@ -21,7 +21,7 @@ from recorteRegion import *
 class recorteRegion(QDialog):
     def __init__(self,parent):
         super(recorteRegion,self).__init__(parent)
-        loadUi("msgRecorte2.ui",self)
+        loadUi("msgRecorte.ui",self)
         self.imagen = None
         self.aux = None
         self.nombreTicket=""
