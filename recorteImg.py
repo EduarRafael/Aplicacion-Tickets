@@ -125,9 +125,9 @@ def dibujarRegiones(img,coords=[]):
 
 def guardarJson(listaTickets,dicImagenes):
     for x in range(len(listaTickets)):
-        if len(listaTickets[x])==0:#El array contiene un espacio en blanco, significa que no se recortaron ticketes en la imagen y pasa a la siguiente
+        if len(listaTickets[x])==0:
             pass
-        else:#En dado caso que no tenga un espacio en blanco se sabe que este contiene al menos 1 ticket recortado con o sin regiones identificadas
+        else:
             dicTicket = {}
             dicTicket["Ticket"] = []#Se crea un diccionario que contega la lista de ticketes y sus regiones(En dado caso de tenerlas)
             aux = len(listaTickets[x])#La longitud de este array nos dice si existe más de 1 ticket en la imagen/En caso de fallar, se sabe que solo se recorto un ticket en
@@ -144,7 +144,6 @@ def guardarJson(listaTickets,dicImagenes):
                 elif len(regiones)>=1:#En dado caso de tener regiones se agregan los nombres y coorenadas de la region correspondiente
                     arrayRegionesCoords = listaTickets[x][j].getCoordsRegiones()
                     arrayNombresRegiones = listaTickets[x][j].getNombresRegiones()
-                        #Cambiar este for para hacerlo directamente con la variable regiones, ya que ahi contiene todo
                     for i in range(len(arrayNombresRegiones)):
                         dicregion["Regiones"].append({"NomRegion":arrayNombresRegiones[i],"Coords":arrayRegionesCoords[i]})
                     dicTicket["Ticket"].append(dicregion)#Se agregan las regiones al ticket
