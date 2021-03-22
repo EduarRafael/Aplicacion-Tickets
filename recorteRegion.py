@@ -29,8 +29,8 @@ class recorteRegion(QDialog):
         user32 = ctypes.windll.user32
         user32.SetProcessDPIAware()
         self.anchowin, self.alturawin = user32.GetSystemMetrics(0), user32.GetSystemMetrics(1)
-        self.anchoImg = round(85/100*self.anchowin)
-        self.alturaImg = round(85/100*self.alturawin)
+        self.anchoImg = round(45/100*self.anchowin)
+        self.alturaImg = round(45/100*self.alturawin)
         self.recorteLabel.setMaximumWidth(self.anchoImg)
         self.recorteLabel.setMaximumHeight(self.alturaImg)
         self.cortarImagenbtn.hide()
@@ -58,19 +58,23 @@ class recorteRegion(QDialog):
     #Evento para cortar la imagen
     def cortarImagen(self):
         self.comboNuevasRegiones.clear()
+        self.recorteLabel.hide()
         self.continuarbtn.hide()
         self.puntos=[]
+        listaPuntos = []
         self.aux = self.imagen.copy()
         cv2.namedWindow("Imagen",cv2.WINDOW_NORMAL)
         cv2.resizeWindow("Imagen",self.anchoImg,self.alturaImg)
         ROIs = cv2.selectROIs("Imagen",self.aux)
         cv2.destroyWindow("Imagen")
-        for x in range (len(ROIs)):
-            #Falta verificar sí la region se selecciono del punto inicial y termino arriba del mismo
-            listaPuntos = [
-                [ROIs[x][0],ROIs[x][1]],[ROIs[x][2],ROIs[x][1]],[ROIs[x][0],ROIs[x][3]],[ROIs[x][2],ROIs[x][3]]
-            ]
+        for rect in ROIs:#Añade todos los recortes a la variable puntos
+            x1=rect[0]
+            y1=rect[1]
+            x2=rect[2]
+            y2=rect[3]
+            listaPuntos = [[x1,y1],[(x2+x1),y1],[x1,(y1+y2)],[(x1+x2),(y1+y2)]]
             self.puntos.append(listaPuntos)
+        #        
         for i in range (len(ROIs)):
             self.comboNuevasRegiones.addItem("Region "+str(i+1))
         self.dst = recortarImagen(self.aux,self.puntos[0])

@@ -40,7 +40,7 @@ def calcularDistancias(puntos=[]):
 
 
 def recortarImagen(imagen,puntos=[]):
-    #print(puntos)
+    print(puntos)
     sizeimg = calcularDistancias(puntos)
     pts1= np.float32([puntos])
     pts2 = np.float32([[0,0],[sizeimg[0],0],[0,sizeimg[1]],[sizeimg[0],sizeimg[1]]])
@@ -49,6 +49,7 @@ def recortarImagen(imagen,puntos=[]):
     imgRecortada = cv2.warpPerspective(imagen,M,(sizeimg[0],sizeimg[1]))
     #imgRecortada = cv2.warpPerspective(imagen,M,(480,300))
     return imgRecortada
+
 
 def formatoPixMap(imagen):
     size = imagen.shape
