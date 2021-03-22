@@ -62,6 +62,8 @@ class recorteTicket(QDialog):
         self.close()
 
     #Evento para cortar la imagen
+
+    #Se tiene que actualizar este evento para utilizar el Recorte ROIs
     def cortarImagen(self):
         self.continuarbtn.hide()
         self.puntos=[]
