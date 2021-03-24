@@ -62,16 +62,26 @@ class  mainWindow(QDialog):
     
     #Funcion para cuando el usuario quiera salir del programa    
     def closeEvent(self, event):
-        #Se tiene comentado el autoguardado por pruebas y cambios en el codigo relacionados a la lista que se utlizaba para los objetos
-        #pass
-        #print(self.dicImagenes)
-        #print("  ")
-        #print(self.listaTickets)
         guardarJson(self.listaTickets,self.dicImagenes)
         #Agregar la parte para guardar el archivo
     
     #Funcion para abir el repositorio 
     def abirRepo(self):
+        # respusta = cargarArchivo()
+        # if respusta == False:
+        #     msg = QMessageBox()
+        #     msg.setIcon(QMessageBox.Critical)
+        #     msg.setText("Error al abrir el archivo")
+        #     msg.setInformativeText('No se encontro la carpeta especificada en el archivo')
+        #     msg.setWindowTitle("Error")
+        #     msg.exec_()
+        # else:
+        #     self.dicImagenes = respusta[0]
+        #     self.listaTickets = respusta[1]
+        #     self.directorio = self.dicImagenes["Dir"]["NomCarpeta"]
+        #     for x in range (len(self.dicImagenes["Imagenes"])):
+        #         imgNom = self.dicImagenes ["Imagenes"]["Imagen_"+str(x)][0]["NombreImagen"]
+        #         self.listImagenes.addItem(imgNom)
         self.directorio = str(QFileDialog.getExistingDirectory(self,"Select Directory"))#Abre el explorador de archivos solo mostrando carpetas y toma la ruta de la carpeta
         if self.directorio == "":#If para verificar que selecciona una carpeta
             #Inicializa y muestra el mensaje de error
@@ -86,6 +96,7 @@ class  mainWindow(QDialog):
             self.listImagenes.clear()#Limpa el widgetList para los objetos entrantes
             archivos = os.listdir(self.directorio)#Hace una lista de los archivos dentro de la ruta que se tomo anteriormente
             self.dicImagenes = {}
+            self.dicImagenes["Dir"]={"NomCarpeta":self.directorio}
             self.dicImagenes["Imagenes"]=[]
             self.dicImagen = {}
             self.listaTickets = [[]] * len(archivos)
@@ -98,8 +109,7 @@ class  mainWindow(QDialog):
                     self.dicImagen["Imagen_"+str(cont)].append({"NombreImagen":archivos[i]})
                     cont=cont+1
             self.dicImagenes["Imagenes"]=self.dicImagen
-            self.dicImagenes["Dir"]={"NomCarpeta":self.directorio}
-            #print(self.dicImagenes)
+        #     #print(self.dicImagenes)
             #with open('data.json', 'w') as file:
                 #json.dump(self.dicImagenes, file, indent=2)
             #print(self.dicImagenes)
