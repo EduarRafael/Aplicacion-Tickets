@@ -1,7 +1,4 @@
 {
-  "Dir": {
-    "NomCarpeta": "C:/Users/PC/Desktop/Estancia/Proyecto/FotosTickets"
-  },
   "Imagenes": {
     "Imagen_0": [
       {
@@ -108,5 +105,8 @@
         "NombreImagen": "20180627_094738.jpg"
       }
     ]
+  },
+  "Dir": {
+    "NomCarpeta": "C:/Users/PC/Desktop/Estancia/Proyecto/FotosTickets"
   }
 }

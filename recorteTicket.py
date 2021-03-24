@@ -52,22 +52,29 @@ class recorteTicket(QDialog):
         self.continuarbtn.clicked.connect(self.cortarImagen)
         self.cortarImagenbtn.clicked.connect(self.cortarImagen)
         self.guardarbtn.clicked.connect(partial(self.gurdar,parent))
+        self.comboNuevasRegiones.activated.connect(self.cambioRegion)
 
     #Evento para cerrar/guardar la imagen cortada
     def gurdar(self,parent):
-        
         self.recorteLabel.hide()
         parent.img_ticket.show()
         self.textLabel.show()
         listaux = []
         countTickets = parent.comboTicket.count()
         cont=1
-        for x in range(len(self.puntos)):
-            nombreTicket = "Ticket_"+str(countTickets+cont)+"_"+self.nombreImagen
-            listaux.append(Ticket(nombreTicket,self.puntos[x]))
-            parent.comboTicket.addItem(nombreTicket)
-            cont+=1
-        parent.listaTickets[self.indiceImagen] = listaux
+        if(len(parent.listaTickets[self.indiceImagen])==0):
+            for x in range(len(self.puntos)):
+                nombreTicket = "Ticket_"+str(countTickets+cont)+"_"+self.nombreImagen
+                listaux.append(Ticket(nombreTicket,self.puntos[x]))
+                parent.comboTicket.addItem(nombreTicket)
+                cont+=1
+            parent.listaTickets[self.indiceImagen] = listaux
+        elif(len(parent.listaTickets[self.indiceImagen])>1):
+            for x in range(len(self.puntos)):
+                nombreTicket = "Ticket_"+str(countTickets+cont)+"_"+self.nombreImagen
+                parent.listaTickets[self.indiceImagen].append(Ticket(nombreTicket,self.puntos[x]))
+                parent.comboTicket.addItem(nombreTicket)
+                cont+=1
         #print(parent.listaTickets[self.indiceImagen])
         indice= countTickets + cont -2
         parent.comboTicket.setCurrentIndex(indice)

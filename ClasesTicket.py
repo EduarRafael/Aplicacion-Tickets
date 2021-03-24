@@ -1,11 +1,11 @@
 #Clase de objeto RegionTicket
 class RegionTicket:
     #Inicializacion de la clase
-    def __init__(self, nom,coords=[]):
+    def __init__(self,nom,t1,t2,coords=[]):
         self.nombreRegion = nom
         self.puntos = coords
-        self.textoOcr = ""
-        self.textoUsuario =""
+        self.textoUsuario = t1
+        self.textoOcr = t2
     
     #Retorna el nombre de la region
     def getNombre(self):
@@ -17,7 +17,7 @@ class RegionTicket:
 
     #Retorna el texto de la region del ticket
     def getTextoOCR(self):
-        return self.texto
+        return self.textoOcr
 
     #Define el texto por el usuario 
     def setTextOCR(self,t):
@@ -59,8 +59,8 @@ class Ticket:
         self.regiones.pop(indice)
         
     #Ingresa una nueva region en la lista de regiones del ticket
-    def nuevaRegion(self,nom,coords=[]):
-        regionN = RegionTicket(nom,coords)
+    def nuevaRegion(self,nom,t1,t2,coords=[]):
+        regionN = RegionTicket(nom,t1,t2,coords)
         self.regiones.append(regionN)
 
     def getNomTicket(self):

@@ -4,8 +4,10 @@ import cv2
 import numpy as np
 import os
 import ctypes
-from sys import platform
 import subprocess
+from sys import platform
+from datetime import datetime
+
 #Importaciones de PyQt5
 from PyQt5 import QtWidgets,QtGui,QtCore
 from PyQt5.QtCore import *
@@ -47,6 +49,22 @@ class  mainWindow(QDialog):
         self.alturaImg = round(85/100*self.alturawin)
         self.contRegiones=0
         self.imagenSeleccionada = False
+        ##
+        respusta = cargarArchivo()
+        if respusta == False:
+            msg = QMessageBox()
+            msg.setIcon(QMessageBox.Critical)
+            msg.setText("Error al abrir el archivo")
+            msg.setInformativeText('No se encontro el archivo Json predeterminado o no cumple con las especificaciones')
+            msg.setWindowTitle("Error")
+            msg.exec_()
+        else:
+            self.dicImagenes = respusta[0]
+            self.listaTickets = respusta[1]
+            self.directorio = self.dicImagenes["Dir"]["NomCarpeta"]
+            for x in range (len(self.dicImagenes["Imagenes"])):
+                imgNom = self.dicImagenes ["Imagenes"]["Imagen_"+str(x)][0]["NombreImagen"]
+                self.listImagenes.addItem(imgNom)
         #Declaracion de objetos de las vistas
         self.recorteTicketD = recorteTicket(self)#Objeto para dialogo del recorte del ticket  
         self.vistaTicketD = vistaTicket(self)
@@ -57,6 +75,7 @@ class  mainWindow(QDialog):
         self.recortarTicket.clicked.connect(self.recortarTDialog)
         self.btnvistaTicket.clicked.connect(self.vistaTicketDialog)
         self.btnEliminarTicket.clicked.connect(self.eliminarTicket)
+        self.btnGurdarInfo.clicked.connect(self.guardarInfoTicket)
         self.comboTicket.activated.connect(self.cambioTicket)
         
     
@@ -67,21 +86,6 @@ class  mainWindow(QDialog):
     
     #Funcion para abir el repositorio 
     def abirRepo(self):
-        # respusta = cargarArchivo()
-        # if respusta == False:
-        #     msg = QMessageBox()
-        #     msg.setIcon(QMessageBox.Critical)
-        #     msg.setText("Error al abrir el archivo")
-        #     msg.setInformativeText('No se encontro la carpeta especificada en el archivo')
-        #     msg.setWindowTitle("Error")
-        #     msg.exec_()
-        # else:
-        #     self.dicImagenes = respusta[0]
-        #     self.listaTickets = respusta[1]
-        #     self.directorio = self.dicImagenes["Dir"]["NomCarpeta"]
-        #     for x in range (len(self.dicImagenes["Imagenes"])):
-        #         imgNom = self.dicImagenes ["Imagenes"]["Imagen_"+str(x)][0]["NombreImagen"]
-        #         self.listImagenes.addItem(imgNom)
         self.directorio = str(QFileDialog.getExistingDirectory(self,"Select Directory"))#Abre el explorador de archivos solo mostrando carpetas y toma la ruta de la carpeta
         if self.directorio == "":#If para verificar que selecciona una carpeta
             #Inicializa y muestra el mensaje de error
@@ -96,10 +100,9 @@ class  mainWindow(QDialog):
             self.listImagenes.clear()#Limpa el widgetList para los objetos entrantes
             archivos = os.listdir(self.directorio)#Hace una lista de los archivos dentro de la ruta que se tomo anteriormente
             self.dicImagenes = {}
-            self.dicImagenes["Dir"]={"NomCarpeta":self.directorio}
             self.dicImagenes["Imagenes"]=[]
             self.dicImagen = {}
-            self.listaTickets = [[]] * len(archivos)
+            
             #print(len(self.listaTickets))
             cont=0
             for i in range (len(archivos)):#Ciclo para revisar todos los archivos de la carpeta abierta
@@ -108,7 +111,9 @@ class  mainWindow(QDialog):
                     self.dicImagen["Imagen_"+str(cont)]=[]
                     self.dicImagen["Imagen_"+str(cont)].append({"NombreImagen":archivos[i]})
                     cont=cont+1
+            self.listaTickets = [[]] * len(self.dicImagen)
             self.dicImagenes["Imagenes"]=self.dicImagen
+            self.dicImagenes["Dir"]={"NomCarpeta":self.directorio}
         #     #print(self.dicImagenes)
             #with open('data.json', 'w') as file:
                 #json.dump(self.dicImagenes, file, indent=2)
@@ -125,7 +130,10 @@ class  mainWindow(QDialog):
         #print(len(self.listaTickets[self.indice]))
         if(len(self.listaTickets[self.indice])==0):
             self.img_ticket.hide()
-            self.comboTicket.clear()            
+            self.comboTicket.clear()
+            self.establecimientoEdit.setText("")
+            fechaWidget = QDate(2021,1,11)
+            self.fechaEdit.setDate(fechaWidget)            
         else:
             self.comboTicket.clear()
             i = len(self.listaTickets[self.indice])
@@ -139,11 +147,34 @@ class  mainWindow(QDialog):
             img = img.scaled(imgW,imgH)
             self.img_ticket.show()
             self.img_ticket.setPixmap(img)
+            self.establecimientoEdit.setText(self.listaTickets[self.indice][0].getEstablecimiento())#Muestra el nombre del establecimiento en el QLineEdit
+            if self.listaTickets[self.indice][0].getFecha()=="":
+                fechaWidget = QDate(2021,1,11)
+                self.fechaEdit.setDate(fechaWidget)
+            else:
+                fecha = self.listaTickets[self.indice][0].getFecha()
+                fecha = datetime.strptime(fecha, '%d/%m/%Y')
+                dia,mes,año = fecha.day,fecha.month,fecha.year
+                fechaWidget = QDate(año,mes,dia)
+                self.fechaEdit.setDate(fechaWidget)
+
         imagen = QtGui.QPixmap(ruta)#Se abre la imagen en un objeto QPixmap
         imgW = round(42/100*self.anchowin)
         imgH = round(80/100*self.alturawin)
         imagen = imagen.scaled(imgW,imgH)#Se escala la imagen al tamaño predeterminado del label
         self.imagen_1.setPixmap(imagen)#Se añade la imagen al label
+
+    def guardarInfoTicket(self):
+        indiceTicketFecha = self.comboTicket.currentIndex()
+        try:
+            self.listaTickets[self.indice][indiceTicketFecha].setFecha(str(self.fechaEdit.date().toString("d/M/yyyy")))#Toma la fecha del widget con la salida: 1/1/2021(Ejemplo)
+            self.listaTickets[self.indice][indiceTicketFecha].setEstablecimiento(self.establecimientoEdit.text()) #Toma el texto del widget
+        except:
+            msg = QMessageBox()
+            msg.setText("Error")
+            msg.setInformativeText('Seleccione una ticket')
+            msg.setWindowTitle("Error")
+            msg.exec_()
 
     def cambioTicket(self):
         self.indiceTicket = self.comboTicket.currentIndex()
@@ -153,6 +184,16 @@ class  mainWindow(QDialog):
         imgH = round(67.59/100*self.alturawin)
         img = img.scaled(imgW,imgH)
         self.img_ticket.setPixmap(img)
+        self.establecimientoEdit.setText(self.listaTickets[self.indice][self.indiceTicket].getEstablecimiento())#Muestra el nombre del establecimiento en el QLineEdit
+        if self.listaTickets[self.indice][self.indiceTicket].getFecha()=="":
+            fechaWidget = QDate(2021,1,11)
+            self.fechaEdit.setDate(fechaWidget)
+        else:
+            fecha = self.listaTickets[self.indice][self.indiceTicket].getFecha()
+            fecha = datetime.strptime(fecha, '%d/%m/%Y')
+            dia,mes,año = fecha.day,fecha.month,fecha.year
+            fechaWidget = QDate(año,mes,dia)
+            self.fechaEdit.setDate(fechaWidget)
 
     def eliminarTicket(self):
         numTickets= self.comboTicket.count()
@@ -225,7 +266,7 @@ class  mainWindow(QDialog):
                 for x in range(len(arrayRegionesCoords[0])):
                     nombreRegion = "Region_"+str(x+1)+"_"+nomticket#Nombre del ticket
                     #Se crean las regiones en base a las coordenadas calculadas
-                    self.listaTickets[self.indice][self.indiceTicket].nuevaRegion(nombreRegion,arrayRegionesCoords[0][x])
+                    self.listaTickets[self.indice][self.indiceTicket].nuevaRegion(nombreRegion,"","",arrayRegionesCoords[0][x])
                     #Se añade el nombre de las regiones al comboBox
                     self.vistaTicketD.comboRegion.addItem(nombreRegion)  
             elif len(regiones)>1:

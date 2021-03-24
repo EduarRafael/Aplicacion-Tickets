@@ -61,7 +61,7 @@ class recorteRegion(QDialog):
         cont=1
         for x in range(len(self.puntos)):
             nombreRegion = "Region_"+str(countRegiones+cont)+"_"+self.nombreTicket
-            parent.TicketAux.nuevaRegion(nombreRegion,self.puntos[x])
+            parent.TicketAux.nuevaRegion(nombreRegion,"","",self.puntos[x])
             parent.comboRegion.addItem(nombreRegion)
             cont+=1
         indice = countRegiones+cont-2

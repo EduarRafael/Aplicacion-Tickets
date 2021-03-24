@@ -130,62 +130,71 @@ def guardarJson(listaTickets,dicImagenes):
             aux = len(listaTickets[x])#La longitud de este array nos dice si existe más de 1 ticket en la imagen/En caso de fallar, se sabe que solo se recorto un ticket en
             #la imagen
             for j in range(aux):
-                nombreticket = listaTickets[x][j].getNomTicket()#Se toma el nombre y coordenadas del ticket
+                nombreTicket = listaTickets[x][j].getNomTicket()#Se toma el nombre y coordenadas del ticket
                 coordsTicket = listaTickets[x][j].getCoords()
+                fechaTicket = listaTickets[x][j].getFecha()
+                establecimientoTicket = listaTickets[x][j].getEstablecimiento()
                 regiones = listaTickets[x][j].getRegiones()#Se llama la funcion getRegiones para saber si este ticket tiene regiones identificadas por la aplicacion o no
                 if len(regiones)==0:#En dado caso de no tener regiones pasa al siguiente ticket
-                    dicTicket["Ticket"].append({"Nomticket":nombreticket,"CoordsTicket":coordsTicket})
+                    dicTicket["Ticket"].append({"Nomticket":nombreTicket,"CoordsTicket":coordsTicket,"FechaTicket":fechaTicket,"EstablecimientoTicket":establecimientoTicket})
                 elif len(regiones)>=1:#En dado caso de tener regiones se agregan los nombres y coorenadas de la region correspondiente
                     dicregion = []#Se crea una lista para las regiones
-                    arrayRegionesCoords = listaTickets[x][j].getCoordsRegiones()
-                    arrayNombresRegiones = listaTickets[x][j].getNombresRegiones()
-                    for i in range(len(arrayNombresRegiones)):
-                        dicregion.append({"NomRegion":arrayNombresRegiones[i],"CoordsRegion":arrayRegionesCoords[i]})
-                    dicTicket["Ticket"].append({"Nomticket":nombreticket,"CoordsTicket":coordsTicket,"Regiones":dicregion})#Se agregan las regiones al ticket
+                    for i in range(len(regiones)):
+                        dicregion.append({"NomRegion":regiones[i].getNombre(),"CoordsRegion":regiones[i].getPuntos(),"Texto OCR":regiones[i].getTextoOCR(),"Texto Usuario":regiones[i].getTextoUsuario()})
+                    dicTicket["Ticket"].append({"Nomticket":nombreTicket,"CoordsTicket":coordsTicket,"FechaTicket":fechaTicket,"EstablecimientoTicket":establecimientoTicket,"Regiones":dicregion})#Se agregan las regiones al ticket
             #print(dicTicket)
             dicImagenes["Imagenes"]["Imagen_"+str(x)].append(dicTicket)#Se agrega el ticket y sus correspondientes regiones a la imagen correspondiente
     #print(dicImagenes)
     with open('data.json', 'w') as file:#El archivo se guarda con el nombre data.json
         json.dump(dicImagenes, file, indent=2)#Se le pasa el diccionario con las imagenes, con sus correspondientes ticketes y las correspondientes regiones por ticket
 
-def cargarArchivo():
-    with open("data.json") as contenido:
-        jdata = json.load(contenido)
-        carpeta = jdata["Dir"]["NomCarpeta"]
-        if os.path.isdir(carpeta):
-            dicImagenes = {}
-            dicImagenes["Dir"]={"NomCarpeta":carpeta}
-            dicImagenes["Imagenes"]=[]
-            dicImagen = {}
-            listaTickets = [[]] * len(jdata["Imagenes"])
-            for x in range (len(jdata["Imagenes"])):
-                imgNom = jdata["Imagenes"]["Imagen_"+str(x)][0]["NombreImagen"]
-                if os.path.isfile(carpeta+"/"+imgNom):
-                    dicImagen["Imagen_"+str(x)]=[]
-                    dicImagen["Imagen_"+str(x)].append({"NombreImagen":imgNom})
-                    #print("Existe")
-                else:
-                    print("No existe la imagen ",imgNom)
 
-                if len(jdata["Imagenes"]["Imagen_"+str(x)])>1:#Sí entra a este if significa que la imagen tiene tickets recortados
-                    #print(len(jdata["Imagenes"]["Imagen_"+str(x)]))
-                    for i in range (1,len(jdata["Imagenes"]["Imagen_"+str(x)])):
-                        listaux = []
-                        for j in range (len(jdata["Imagenes"]["Imagen_"+str(x)][i]["Ticket"])):
-                            nomTicket = jdata["Imagenes"]["Imagen_"+str(x)][i]["Ticket"][j]["Nomticket"]
-                            coordsTicket = jdata["Imagenes"]["Imagen_"+str(x)][i]["Ticket"][j]["CoordsTicket"]
-                            ticket = Ticket(nomTicket,coordsTicket)
-                            if len(jdata["Imagenes"]["Imagen_"+str(x)][i]["Ticket"][j])>2:#Sí entra a este if significa que el ticket tiene regiones encontradas
-                                for k in range(len(jdata["Imagenes"]["Imagen_"+str(x)][i]["Ticket"][j]["Regiones"])):
-                                    nomRegion= jdata["Imagenes"]["Imagen_"+str(x)][i]["Ticket"][j]["Regiones"][k]["NomRegion"]
-                                    coordsRegionRegion= jdata["Imagenes"]["Imagen_"+str(x)][i]["Ticket"][j]["Regiones"][k]["CoordsRegion"]
-                                    ticket.nuevaRegion(nomRegion,coordsRegionRegion)
-                            else:
-                                pass
-                            listaux.append(ticket)#Se añade el ticket a la listaaux
-                        listaTickets[x] = listaux#Se asigna la lista de tickets a la imagen correspondiente
-            dicImagenes["Imagenes"] = dicImagen#Se añanden las imagenes encontradas al dicImagenes para que se cargen en la vistaP
-            return dicImagenes, listaTickets
-        else:
-            return False   
-        
+def cargarArchivo():
+    try:
+        with open("data.json") as contenido:
+            jdata = json.load(contenido)
+            carpeta = jdata["Dir"]["NomCarpeta"]
+            if os.path.isdir(carpeta):
+                dicImagenes = {}
+                dicImagenes["Dir"]={"NomCarpeta":carpeta}
+                dicImagenes["Imagenes"]=[]
+                dicImagen = {}
+                listaTickets = [[]] * len(jdata["Imagenes"])
+                for x in range (len(jdata["Imagenes"])):
+                    imgNom = jdata["Imagenes"]["Imagen_"+str(x)][0]["NombreImagen"]
+                    if os.path.isfile(carpeta+"/"+imgNom):
+                        dicImagen["Imagen_"+str(x)]=[]
+                        dicImagen["Imagen_"+str(x)].append({"NombreImagen":imgNom})
+                        #print("Existe")
+                    else:
+                        print("No existe la imagen ",imgNom)
+
+                    if len(jdata["Imagenes"]["Imagen_"+str(x)])>1:#Sí entra a este if significa que la imagen tiene tickets recortados
+                        #print(len(jdata["Imagenes"]["Imagen_"+str(x)]))
+                        for i in range (1,len(jdata["Imagenes"]["Imagen_"+str(x)])):
+                            listaux = []
+                            for j in range (len(jdata["Imagenes"]["Imagen_"+str(x)][i]["Ticket"])):
+                                nomTicket = jdata["Imagenes"]["Imagen_"+str(x)][i]["Ticket"][j]["Nomticket"]
+                                coordsTicket = jdata["Imagenes"]["Imagen_"+str(x)][i]["Ticket"][j]["CoordsTicket"]
+                                fechaTicket = jdata["Imagenes"]["Imagen_"+str(x)][i]["Ticket"][j]["FechaTicket"]
+                                establecimientoTicket = jdata["Imagenes"]["Imagen_"+str(x)][i]["Ticket"][j]["EstablecimientoTicket"]
+                                ticket = Ticket(nomTicket,coordsTicket)
+                                ticket.setFecha(fechaTicket)
+                                ticket.setEstablecimiento(establecimientoTicket)
+                                if len(jdata["Imagenes"]["Imagen_"+str(x)][i]["Ticket"][j])>4:#Sí entra a este if significa que el ticket tiene regiones encontradas
+                                    for k in range(len(jdata["Imagenes"]["Imagen_"+str(x)][i]["Ticket"][j]["Regiones"])):
+                                        nomRegion= jdata["Imagenes"]["Imagen_"+str(x)][i]["Ticket"][j]["Regiones"][k]["NomRegion"]
+                                        coordsRegionRegion= jdata["Imagenes"]["Imagen_"+str(x)][i]["Ticket"][j]["Regiones"][k]["CoordsRegion"]
+                                        txtOCR = jdata["Imagenes"]["Imagen_"+str(x)][i]["Ticket"][j]["Regiones"][k]["Texto OCR"]
+                                        txtUsuario = jdata["Imagenes"]["Imagen_"+str(x)][i]["Ticket"][j]["Regiones"][k]["Texto Usuario"]
+                                        ticket.nuevaRegion(nomRegion,txtUsuario,txtOCR,coordsRegionRegion)
+                                else:
+                                    pass
+                                listaux.append(ticket)#Se añade el ticket a la listaaux
+                            listaTickets[x] = listaux#Se asigna la lista de tickets a la imagen correspondiente
+                dicImagenes["Imagenes"] = dicImagen#Se añanden las imagenes encontradas al dicImagenes para que se cargen en la vistaP
+                return dicImagenes, listaTickets
+            else:
+                return False   
+    except:
+        return False
