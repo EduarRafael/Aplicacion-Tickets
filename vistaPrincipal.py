@@ -63,11 +63,11 @@ class  mainWindow(QDialog):
     #Funcion para cuando el usuario quiera salir del programa    
     def closeEvent(self, event):
         #Se tiene comentado el autoguardado por pruebas y cambios en el codigo relacionados a la lista que se utlizaba para los objetos
-        pass
+        #pass
         #print(self.dicImagenes)
         #print("  ")
         #print(self.listaTickets)
-        #guardarJson(self.listaTickets,self.dicImagenes)
+        guardarJson(self.listaTickets,self.dicImagenes)
         #Agregar la parte para guardar el archivo
     
     #Funcion para abir el repositorio 

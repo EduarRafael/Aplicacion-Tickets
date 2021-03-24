@@ -102,10 +102,10 @@ class recorteTicket(QDialog):
         ROIs = cv2.selectROIs("Imagen",self.aux)
         cv2.destroyWindow("Imagen")
         for rect in ROIs:#Añade todos los recortes a la variable puntos
-            x1=rect[0]
-            y1=rect[1]
-            x2=rect[2]
-            y2=rect[3]
+            x1=int(rect[0])
+            y1=int(rect[1])
+            x2=int(rect[2])
+            y2=int(rect[3])
             listaPuntos = [[x1,y1],[(x2+x1),y1],[x1,(y1+y2)],[(x1+x2),(y1+y2)]]
             self.puntos.append(listaPuntos)
         #        
