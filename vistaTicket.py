@@ -56,7 +56,8 @@ class vistaTicket(QDialog):
         self.btnVerRegiones.clicked.connect(self.mostrarRegiones)
         self.btnGuardarTexto.clicked.connect(self.guardarTexto)
         self.btnEliminar.clicked.connect(self.eliminarRegion)
-
+    
+    #Funcion para elimiar region
     def eliminarRegion(self):
         qm = QMessageBox
         ret = qm.question(self,'', "¿Estas seguro de eliminar esta region? Esta accion no se puede revetir", qm.Yes | qm.No)
@@ -83,10 +84,12 @@ class vistaTicket(QDialog):
                 imgRegion = imgRegion.scaled(imgW,imgH)
                 self.comboRegion.setCurrentIndex(0)
                 self.imagen_ticketlabel.setPixmap(imgRegion)
-
+    
+    #Evento al cerrar el dialogo
     def closeEvent(self,evnt):
         self.auxParent.listaTickets[self.auxParent.indice][self.auxParent.indiceTicket] = self.TicketAux
-
+    
+    #Funcion para guardar el texto 
     def guardarTexto(self):
         textoUsuario = self.txtUsuario.toPlainText()
         if textoUsuario == "":
@@ -106,6 +109,7 @@ class vistaTicket(QDialog):
             msg.setWindowTitle("Exito!")
             msg.exec_()
 
+    #Funcion para mostrar las regiones
     def mostrarRegiones(self):
         auxImagen = self.imagenTicket.copy()
         arrayRegionesCoords = self.TicketAux.getCoordsRegiones()
@@ -118,7 +122,7 @@ class vistaTicket(QDialog):
         img = img.scaled(imgW,imgH)
         self.imagen_ticketlabel.setPixmap(img)
 
-
+    #Funcion para abrir dialogo de recorte de regiones
     def cortarRegion(self,parent):
         text = str(parent.comboTicket.currentText())
         self.recorteRegionD.cortarImagenbtn.hide()
@@ -134,6 +138,7 @@ class vistaTicket(QDialog):
         self.recorteRegionD.setModal(True)
         self.recorteRegionD.show()
     
+    #Funcion para seleccion de region
     def seleccionarRegion(self):
         indexRegion = self.comboRegion.currentIndex()
         coords = self.TicketAux.getCoordsRegionbyIndex(indexRegion)

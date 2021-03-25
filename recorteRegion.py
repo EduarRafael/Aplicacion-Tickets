@@ -18,8 +18,6 @@ from PyQt5.uic import loadUi
 from ClasesTicket import *
 from recorteImg import *
 
-from recorteRegion import *
-
 class recorteRegion(QDialog):
     def __init__(self,parent):
         super(recorteRegion,self).__init__(parent)

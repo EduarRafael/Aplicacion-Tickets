@@ -84,8 +84,7 @@ class recorteTicket(QDialog):
         parent.img_ticket.setPixmap(img)
         self.close()
 
-    #Evento para cortar la imagen
-
+    #Evento para cambio de region
     def cambioRegion(self):
         self.aux = self.imagen.copy()
         index = self.comboNuevasRegiones.currentIndex()

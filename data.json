@@ -1,4 +1,7 @@
 {
+  "Dir": {
+    "NomCarpeta": "C:/Users/PC/Desktop/Estancia/Proyecto/FotosTickets"
+  },
   "Imagenes": {
     "Imagen_0": [
       {
@@ -8,6 +11,5624 @@
     "Imagen_1": [
       {
         "NombreImagen": "20180228_110307.jpg"
+      },
+      {
+        "Ticket": [
+          {
+            "Nomticket": "Ticket_1_20180228_110307.jpg",
+            "CoordsTicket": [
+              [
+                354,
+                734
+              ],
+              [
+                1461,
+                734
+              ],
+              [
+                354,
+                4037
+              ],
+              [
+                1461,
+                4037
+              ]
+            ],
+            "FechaTicket": "",
+            "EstablecimientoTicket": "",
+            "Regiones": [
+              {
+                "NomRegion": "Region_1_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    210,
+                    0
+                  ],
+                  [
+                    788,
+                    0
+                  ],
+                  [
+                    210,
+                    158
+                  ],
+                  [
+                    788,
+                    158
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_2_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    0,
+                    0
+                  ],
+                  [
+                    26,
+                    0
+                  ],
+                  [
+                    0,
+                    452
+                  ],
+                  [
+                    26,
+                    452
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_3_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    244,
+                    172
+                  ],
+                  [
+                    368,
+                    172
+                  ],
+                  [
+                    244,
+                    202
+                  ],
+                  [
+                    368,
+                    202
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_4_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    532,
+                    178
+                  ],
+                  [
+                    740,
+                    178
+                  ],
+                  [
+                    532,
+                    210
+                  ],
+                  [
+                    740,
+                    210
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_5_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    460,
+                    180
+                  ],
+                  [
+                    512,
+                    180
+                  ],
+                  [
+                    460,
+                    204
+                  ],
+                  [
+                    512,
+                    204
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_6_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    388,
+                    180
+                  ],
+                  [
+                    440,
+                    180
+                  ],
+                  [
+                    388,
+                    202
+                  ],
+                  [
+                    440,
+                    202
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_7_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    152,
+                    222
+                  ],
+                  [
+                    420,
+                    222
+                  ],
+                  [
+                    152,
+                    254
+                  ],
+                  [
+                    420,
+                    254
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_8_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    458,
+                    230
+                  ],
+                  [
+                    852,
+                    230
+                  ],
+                  [
+                    458,
+                    264
+                  ],
+                  [
+                    852,
+                    264
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_9_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    114,
+                    274
+                  ],
+                  [
+                    258,
+                    274
+                  ],
+                  [
+                    114,
+                    308
+                  ],
+                  [
+                    258,
+                    308
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_10_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    564,
+                    282
+                  ],
+                  [
+                    650,
+                    282
+                  ],
+                  [
+                    564,
+                    314
+                  ],
+                  [
+                    650,
+                    314
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_11_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    926,
+                    284
+                  ],
+                  [
+                    1016,
+                    284
+                  ],
+                  [
+                    926,
+                    318
+                  ],
+                  [
+                    1016,
+                    318
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_12_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    690,
+                    284
+                  ],
+                  [
+                    834,
+                    284
+                  ],
+                  [
+                    690,
+                    318
+                  ],
+                  [
+                    834,
+                    318
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_13_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    40,
+                    328
+                  ],
+                  [
+                    164,
+                    328
+                  ],
+                  [
+                    40,
+                    362
+                  ],
+                  [
+                    164,
+                    362
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_14_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    184,
+                    330
+                  ],
+                  [
+                    290,
+                    330
+                  ],
+                  [
+                    184,
+                    362
+                  ],
+                  [
+                    290,
+                    362
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_15_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    942,
+                    340
+                  ],
+                  [
+                    1012,
+                    340
+                  ],
+                  [
+                    942,
+                    372
+                  ],
+                  [
+                    1012,
+                    372
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_16_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    762,
+                    340
+                  ],
+                  [
+                    832,
+                    340
+                  ],
+                  [
+                    762,
+                    372
+                  ],
+                  [
+                    832,
+                    372
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_17_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    38,
+                    384
+                  ],
+                  [
+                    144,
+                    384
+                  ],
+                  [
+                    38,
+                    416
+                  ],
+                  [
+                    144,
+                    416
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_18_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    596,
+                    390
+                  ],
+                  [
+                    648,
+                    390
+                  ],
+                  [
+                    596,
+                    422
+                  ],
+                  [
+                    648,
+                    422
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_19_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    922,
+                    394
+                  ],
+                  [
+                    1012,
+                    394
+                  ],
+                  [
+                    922,
+                    426
+                  ],
+                  [
+                    1012,
+                    426
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_20_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    746,
+                    394
+                  ],
+                  [
+                    830,
+                    394
+                  ],
+                  [
+                    746,
+                    426
+                  ],
+                  [
+                    830,
+                    426
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_21_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    36,
+                    438
+                  ],
+                  [
+                    196,
+                    438
+                  ],
+                  [
+                    36,
+                    472
+                  ],
+                  [
+                    196,
+                    472
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_22_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    596,
+                    446
+                  ],
+                  [
+                    648,
+                    446
+                  ],
+                  [
+                    596,
+                    476
+                  ],
+                  [
+                    648,
+                    476
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_23_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    758,
+                    448
+                  ],
+                  [
+                    830,
+                    448
+                  ],
+                  [
+                    758,
+                    480
+                  ],
+                  [
+                    830,
+                    480
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_24_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    746,
+                    448
+                  ],
+                  [
+                    774,
+                    448
+                  ],
+                  [
+                    746,
+                    464
+                  ],
+                  [
+                    774,
+                    464
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_25_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    940,
+                    450
+                  ],
+                  [
+                    1010,
+                    450
+                  ],
+                  [
+                    940,
+                    480
+                  ],
+                  [
+                    1010,
+                    480
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_26_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    34,
+                    494
+                  ],
+                  [
+                    428,
+                    494
+                  ],
+                  [
+                    34,
+                    532
+                  ],
+                  [
+                    428,
+                    532
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_27_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    448,
+                    498
+                  ],
+                  [
+                    502,
+                    498
+                  ],
+                  [
+                    448,
+                    532
+                  ],
+                  [
+                    502,
+                    532
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_28_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    558,
+                    500
+                  ],
+                  [
+                    646,
+                    500
+                  ],
+                  [
+                    558,
+                    532
+                  ],
+                  [
+                    646,
+                    532
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_29_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    34,
+                    550
+                  ],
+                  [
+                    158,
+                    550
+                  ],
+                  [
+                    34,
+                    586
+                  ],
+                  [
+                    158,
+                    586
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_30_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    570,
+                    556
+                  ],
+                  [
+                    644,
+                    556
+                  ],
+                  [
+                    570,
+                    592
+                  ],
+                  [
+                    644,
+                    592
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_31_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    744,
+                    558
+                  ],
+                  [
+                    828,
+                    558
+                  ],
+                  [
+                    744,
+                    594
+                  ],
+                  [
+                    828,
+                    594
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_32_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    928,
+                    560
+                  ],
+                  [
+                    1012,
+                    560
+                  ],
+                  [
+                    928,
+                    594
+                  ],
+                  [
+                    1012,
+                    594
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_33_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    142,
+                    610
+                  ],
+                  [
+                    244,
+                    610
+                  ],
+                  [
+                    142,
+                    646
+                  ],
+                  [
+                    244,
+                    646
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_34_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    34,
+                    610
+                  ],
+                  [
+                    122,
+                    610
+                  ],
+                  [
+                    34,
+                    644
+                  ],
+                  [
+                    122,
+                    644
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_35_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    594,
+                    616
+                  ],
+                  [
+                    646,
+                    616
+                  ],
+                  [
+                    594,
+                    650
+                  ],
+                  [
+                    646,
+                    650
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_36_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    920,
+                    618
+                  ],
+                  [
+                    1010,
+                    618
+                  ],
+                  [
+                    920,
+                    654
+                  ],
+                  [
+                    1010,
+                    654
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_37_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    738,
+                    618
+                  ],
+                  [
+                    828,
+                    618
+                  ],
+                  [
+                    738,
+                    652
+                  ],
+                  [
+                    828,
+                    652
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_38_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    556,
+                    626
+                  ],
+                  [
+                    582,
+                    626
+                  ],
+                  [
+                    556,
+                    650
+                  ],
+                  [
+                    582,
+                    650
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_39_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    34,
+                    668
+                  ],
+                  [
+                    178,
+                    668
+                  ],
+                  [
+                    34,
+                    704
+                  ],
+                  [
+                    178,
+                    704
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_40_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    214,
+                    670
+                  ],
+                  [
+                    358,
+                    670
+                  ],
+                  [
+                    214,
+                    706
+                  ],
+                  [
+                    358,
+                    706
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_41_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    594,
+                    676
+                  ],
+                  [
+                    644,
+                    676
+                  ],
+                  [
+                    594,
+                    710
+                  ],
+                  [
+                    644,
+                    710
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_42_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    744,
+                    678
+                  ],
+                  [
+                    828,
+                    678
+                  ],
+                  [
+                    744,
+                    712
+                  ],
+                  [
+                    828,
+                    712
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_43_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    924,
+                    680
+                  ],
+                  [
+                    1010,
+                    680
+                  ],
+                  [
+                    924,
+                    714
+                  ],
+                  [
+                    1010,
+                    714
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_44_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    34,
+                    726
+                  ],
+                  [
+                    176,
+                    726
+                  ],
+                  [
+                    34,
+                    762
+                  ],
+                  [
+                    176,
+                    762
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_45_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    198,
+                    730
+                  ],
+                  [
+                    322,
+                    730
+                  ],
+                  [
+                    198,
+                    764
+                  ],
+                  [
+                    322,
+                    764
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_46_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    340,
+                    732
+                  ],
+                  [
+                    444,
+                    732
+                  ],
+                  [
+                    340,
+                    766
+                  ],
+                  [
+                    444,
+                    766
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_47_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    742,
+                    736
+                  ],
+                  [
+                    828,
+                    736
+                  ],
+                  [
+                    742,
+                    772
+                  ],
+                  [
+                    828,
+                    772
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_48_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    922,
+                    740
+                  ],
+                  [
+                    1008,
+                    740
+                  ],
+                  [
+                    922,
+                    774
+                  ],
+                  [
+                    1008,
+                    774
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_49_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    34,
+                    784
+                  ],
+                  [
+                    158,
+                    784
+                  ],
+                  [
+                    34,
+                    818
+                  ],
+                  [
+                    158,
+                    818
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_50_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    178,
+                    786
+                  ],
+                  [
+                    232,
+                    786
+                  ],
+                  [
+                    178,
+                    820
+                  ],
+                  [
+                    232,
+                    820
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_51_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    304,
+                    788
+                  ],
+                  [
+                    394,
+                    788
+                  ],
+                  [
+                    304,
+                    824
+                  ],
+                  [
+                    394,
+                    824
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_52_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    416,
+                    792
+                  ],
+                  [
+                    482,
+                    792
+                  ],
+                  [
+                    416,
+                    824
+                  ],
+                  [
+                    482,
+                    824
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_53_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    252,
+                    794
+                  ],
+                  [
+                    284,
+                    794
+                  ],
+                  [
+                    252,
+                    822
+                  ],
+                  [
+                    284,
+                    822
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_54_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    740,
+                    796
+                  ],
+                  [
+                    828,
+                    796
+                  ],
+                  [
+                    740,
+                    830
+                  ],
+                  [
+                    828,
+                    830
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_55_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    920,
+                    798
+                  ],
+                  [
+                    1008,
+                    798
+                  ],
+                  [
+                    920,
+                    832
+                  ],
+                  [
+                    1008,
+                    832
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_56_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    32,
+                    840
+                  ],
+                  [
+                    122,
+                    840
+                  ],
+                  [
+                    32,
+                    876
+                  ],
+                  [
+                    122,
+                    876
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_57_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    142,
+                    842
+                  ],
+                  [
+                    212,
+                    842
+                  ],
+                  [
+                    142,
+                    878
+                  ],
+                  [
+                    212,
+                    878
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_58_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    232,
+                    846
+                  ],
+                  [
+                    376,
+                    846
+                  ],
+                  [
+                    232,
+                    880
+                  ],
+                  [
+                    376,
+                    880
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_59_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    742,
+                    854
+                  ],
+                  [
+                    826,
+                    854
+                  ],
+                  [
+                    742,
+                    888
+                  ],
+                  [
+                    826,
+                    888
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_60_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    924,
+                    858
+                  ],
+                  [
+                    1008,
+                    858
+                  ],
+                  [
+                    924,
+                    892
+                  ],
+                  [
+                    1008,
+                    892
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_61_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    32,
+                    898
+                  ],
+                  [
+                    156,
+                    898
+                  ],
+                  [
+                    32,
+                    934
+                  ],
+                  [
+                    156,
+                    934
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_62_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    176,
+                    900
+                  ],
+                  [
+                    248,
+                    900
+                  ],
+                  [
+                    176,
+                    936
+                  ],
+                  [
+                    248,
+                    936
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_63_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    268,
+                    904
+                  ],
+                  [
+                    410,
+                    904
+                  ],
+                  [
+                    268,
+                    938
+                  ],
+                  [
+                    410,
+                    938
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_64_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    430,
+                    908
+                  ],
+                  [
+                    482,
+                    908
+                  ],
+                  [
+                    430,
+                    940
+                  ],
+                  [
+                    482,
+                    940
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_65_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    920,
+                    916
+                  ],
+                  [
+                    1008,
+                    916
+                  ],
+                  [
+                    920,
+                    950
+                  ],
+                  [
+                    1008,
+                    950
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_66_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    756,
+                    916
+                  ],
+                  [
+                    826,
+                    916
+                  ],
+                  [
+                    756,
+                    946
+                  ],
+                  [
+                    826,
+                    946
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_67_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    28,
+                    954
+                  ],
+                  [
+                    138,
+                    954
+                  ],
+                  [
+                    28,
+                    990
+                  ],
+                  [
+                    138,
+                    990
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_68_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    158,
+                    956
+                  ],
+                  [
+                    318,
+                    956
+                  ],
+                  [
+                    158,
+                    994
+                  ],
+                  [
+                    318,
+                    994
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_69_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    338,
+                    962
+                  ],
+                  [
+                    482,
+                    962
+                  ],
+                  [
+                    338,
+                    998
+                  ],
+                  [
+                    482,
+                    998
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_70_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    738,
+                    972
+                  ],
+                  [
+                    772,
+                    972
+                  ],
+                  [
+                    738,
+                    1004
+                  ],
+                  [
+                    772,
+                    1004
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_71_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    918,
+                    974
+                  ],
+                  [
+                    1008,
+                    974
+                  ],
+                  [
+                    918,
+                    1008
+                  ],
+                  [
+                    1008,
+                    1008
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_72_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    792,
+                    974
+                  ],
+                  [
+                    826,
+                    974
+                  ],
+                  [
+                    792,
+                    1006
+                  ],
+                  [
+                    826,
+                    1006
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_73_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    0,
+                    1004
+                  ],
+                  [
+                    26,
+                    1004
+                  ],
+                  [
+                    0,
+                    3302
+                  ],
+                  [
+                    26,
+                    3302
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_74_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    34,
+                    1012
+                  ],
+                  [
+                    284,
+                    1012
+                  ],
+                  [
+                    34,
+                    1050
+                  ],
+                  [
+                    284,
+                    1050
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_75_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    340,
+                    1020
+                  ],
+                  [
+                    410,
+                    1020
+                  ],
+                  [
+                    340,
+                    1052
+                  ],
+                  [
+                    410,
+                    1052
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_76_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    430,
+                    1022
+                  ],
+                  [
+                    482,
+                    1022
+                  ],
+                  [
+                    430,
+                    1054
+                  ],
+                  [
+                    482,
+                    1054
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_77_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    304,
+                    1022
+                  ],
+                  [
+                    320,
+                    1022
+                  ],
+                  [
+                    304,
+                    1052
+                  ],
+                  [
+                    320,
+                    1052
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_78_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    780,
+                    1030
+                  ],
+                  [
+                    826,
+                    1030
+                  ],
+                  [
+                    780,
+                    1062
+                  ],
+                  [
+                    826,
+                    1062
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_79_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    738,
+                    1030
+                  ],
+                  [
+                    772,
+                    1030
+                  ],
+                  [
+                    738,
+                    1060
+                  ],
+                  [
+                    772,
+                    1060
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_80_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    32,
+                    1070
+                  ],
+                  [
+                    124,
+                    1070
+                  ],
+                  [
+                    32,
+                    1104
+                  ],
+                  [
+                    124,
+                    1104
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_81_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    144,
+                    1072
+                  ],
+                  [
+                    232,
+                    1072
+                  ],
+                  [
+                    144,
+                    1108
+                  ],
+                  [
+                    232,
+                    1108
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_82_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    252,
+                    1076
+                  ],
+                  [
+                    394,
+                    1076
+                  ],
+                  [
+                    252,
+                    1110
+                  ],
+                  [
+                    394,
+                    1110
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_83_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    416,
+                    1078
+                  ],
+                  [
+                    484,
+                    1078
+                  ],
+                  [
+                    416,
+                    1112
+                  ],
+                  [
+                    484,
+                    1112
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_84_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    740,
+                    1086
+                  ],
+                  [
+                    826,
+                    1086
+                  ],
+                  [
+                    740,
+                    1118
+                  ],
+                  [
+                    826,
+                    1118
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_85_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    918,
+                    1088
+                  ],
+                  [
+                    1006,
+                    1088
+                  ],
+                  [
+                    918,
+                    1122
+                  ],
+                  [
+                    1006,
+                    1122
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_86_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    36,
+                    1128
+                  ],
+                  [
+                    180,
+                    1128
+                  ],
+                  [
+                    36,
+                    1162
+                  ],
+                  [
+                    180,
+                    1162
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_87_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    198,
+                    1130
+                  ],
+                  [
+                    288,
+                    1130
+                  ],
+                  [
+                    198,
+                    1164
+                  ],
+                  [
+                    288,
+                    1164
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_88_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    308,
+                    1132
+                  ],
+                  [
+                    412,
+                    1132
+                  ],
+                  [
+                    308,
+                    1166
+                  ],
+                  [
+                    412,
+                    1166
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_89_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    434,
+                    1136
+                  ],
+                  [
+                    468,
+                    1136
+                  ],
+                  [
+                    434,
+                    1168
+                  ],
+                  [
+                    468,
+                    1168
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_90_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    794,
+                    1142
+                  ],
+                  [
+                    826,
+                    1142
+                  ],
+                  [
+                    794,
+                    1176
+                  ],
+                  [
+                    826,
+                    1176
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_91_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    740,
+                    1142
+                  ],
+                  [
+                    772,
+                    1142
+                  ],
+                  [
+                    740,
+                    1174
+                  ],
+                  [
+                    772,
+                    1174
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_92_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    916,
+                    1144
+                  ],
+                  [
+                    1006,
+                    1144
+                  ],
+                  [
+                    916,
+                    1178
+                  ],
+                  [
+                    1006,
+                    1178
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_93_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    38,
+                    1184
+                  ],
+                  [
+                    164,
+                    1184
+                  ],
+                  [
+                    38,
+                    1220
+                  ],
+                  [
+                    164,
+                    1220
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_94_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    184,
+                    1186
+                  ],
+                  [
+                    302,
+                    1186
+                  ],
+                  [
+                    184,
+                    1222
+                  ],
+                  [
+                    302,
+                    1222
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_95_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    326,
+                    1190
+                  ],
+                  [
+                    486,
+                    1190
+                  ],
+                  [
+                    326,
+                    1226
+                  ],
+                  [
+                    486,
+                    1226
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_96_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    740,
+                    1200
+                  ],
+                  [
+                    826,
+                    1200
+                  ],
+                  [
+                    740,
+                    1232
+                  ],
+                  [
+                    826,
+                    1232
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_97_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    918,
+                    1202
+                  ],
+                  [
+                    1006,
+                    1202
+                  ],
+                  [
+                    918,
+                    1236
+                  ],
+                  [
+                    1006,
+                    1236
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_98_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    40,
+                    1240
+                  ],
+                  [
+                    344,
+                    1240
+                  ],
+                  [
+                    40,
+                    1278
+                  ],
+                  [
+                    344,
+                    1278
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_99_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    796,
+                    1256
+                  ],
+                  [
+                    826,
+                    1256
+                  ],
+                  [
+                    796,
+                    1288
+                  ],
+                  [
+                    826,
+                    1288
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_100_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    738,
+                    1256
+                  ],
+                  [
+                    772,
+                    1256
+                  ],
+                  [
+                    738,
+                    1288
+                  ],
+                  [
+                    772,
+                    1288
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_101_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    916,
+                    1258
+                  ],
+                  [
+                    1004,
+                    1258
+                  ],
+                  [
+                    916,
+                    1292
+                  ],
+                  [
+                    1004,
+                    1292
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_102_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    42,
+                    1296
+                  ],
+                  [
+                    164,
+                    1296
+                  ],
+                  [
+                    42,
+                    1332
+                  ],
+                  [
+                    164,
+                    1332
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_103_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    186,
+                    1300
+                  ],
+                  [
+                    290,
+                    1300
+                  ],
+                  [
+                    186,
+                    1334
+                  ],
+                  [
+                    290,
+                    1334
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_104_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    312,
+                    1302
+                  ],
+                  [
+                    414,
+                    1302
+                  ],
+                  [
+                    312,
+                    1336
+                  ],
+                  [
+                    414,
+                    1336
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_105_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    742,
+                    1312
+                  ],
+                  [
+                    826,
+                    1312
+                  ],
+                  [
+                    742,
+                    1346
+                  ],
+                  [
+                    826,
+                    1346
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_106_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    918,
+                    1316
+                  ],
+                  [
+                    1004,
+                    1316
+                  ],
+                  [
+                    918,
+                    1348
+                  ],
+                  [
+                    1004,
+                    1348
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_107_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    118,
+                    1354
+                  ],
+                  [
+                    240,
+                    1354
+                  ],
+                  [
+                    118,
+                    1388
+                  ],
+                  [
+                    240,
+                    1388
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_108_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    44,
+                    1354
+                  ],
+                  [
+                    96,
+                    1354
+                  ],
+                  [
+                    44,
+                    1390
+                  ],
+                  [
+                    96,
+                    1390
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_109_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    312,
+                    1358
+                  ],
+                  [
+                    382,
+                    1358
+                  ],
+                  [
+                    312,
+                    1390
+                  ],
+                  [
+                    382,
+                    1390
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_110_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    260,
+                    1358
+                  ],
+                  [
+                    290,
+                    1358
+                  ],
+                  [
+                    260,
+                    1388
+                  ],
+                  [
+                    290,
+                    1388
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_111_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    742,
+                    1368
+                  ],
+                  [
+                    826,
+                    1368
+                  ],
+                  [
+                    742,
+                    1400
+                  ],
+                  [
+                    826,
+                    1400
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_112_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    916,
+                    1370
+                  ],
+                  [
+                    1002,
+                    1370
+                  ],
+                  [
+                    916,
+                    1404
+                  ],
+                  [
+                    1002,
+                    1404
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_113_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    48,
+                    1408
+                  ],
+                  [
+                    314,
+                    1408
+                  ],
+                  [
+                    48,
+                    1444
+                  ],
+                  [
+                    314,
+                    1444
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_114_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    334,
+                    1414
+                  ],
+                  [
+                    420,
+                    1414
+                  ],
+                  [
+                    334,
+                    1446
+                  ],
+                  [
+                    420,
+                    1446
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_115_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    740,
+                    1422
+                  ],
+                  [
+                    826,
+                    1422
+                  ],
+                  [
+                    740,
+                    1454
+                  ],
+                  [
+                    826,
+                    1454
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_116_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    916,
+                    1426
+                  ],
+                  [
+                    1002,
+                    1426
+                  ],
+                  [
+                    916,
+                    1458
+                  ],
+                  [
+                    1002,
+                    1458
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_117_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    52,
+                    1460
+                  ],
+                  [
+                    192,
+                    1460
+                  ],
+                  [
+                    52,
+                    1494
+                  ],
+                  [
+                    192,
+                    1494
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_118_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    212,
+                    1464
+                  ],
+                  [
+                    316,
+                    1464
+                  ],
+                  [
+                    212,
+                    1496
+                  ],
+                  [
+                    316,
+                    1496
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_119_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    336,
+                    1466
+                  ],
+                  [
+                    422,
+                    1466
+                  ],
+                  [
+                    336,
+                    1498
+                  ],
+                  [
+                    422,
+                    1498
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_120_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    740,
+                    1478
+                  ],
+                  [
+                    826,
+                    1478
+                  ],
+                  [
+                    740,
+                    1508
+                  ],
+                  [
+                    826,
+                    1508
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_121_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    916,
+                    1480
+                  ],
+                  [
+                    1002,
+                    1480
+                  ],
+                  [
+                    916,
+                    1512
+                  ],
+                  [
+                    1002,
+                    1512
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_122_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    174,
+                    1516
+                  ],
+                  [
+                    332,
+                    1516
+                  ],
+                  [
+                    174,
+                    1552
+                  ],
+                  [
+                    332,
+                    1552
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_123_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    68,
+                    1520
+                  ],
+                  [
+                    138,
+                    1520
+                  ],
+                  [
+                    68,
+                    1542
+                  ],
+                  [
+                    138,
+                    1542
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_124_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    388,
+                    1522
+                  ],
+                  [
+                    560,
+                    1522
+                  ],
+                  [
+                    388,
+                    1558
+                  ],
+                  [
+                    560,
+                    1558
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_125_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    932,
+                    1536
+                  ],
+                  [
+                    1020,
+                    1536
+                  ],
+                  [
+                    932,
+                    1568
+                  ],
+                  [
+                    1020,
+                    1568
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_126_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    48,
+                    1570
+                  ],
+                  [
+                    258,
+                    1570
+                  ],
+                  [
+                    48,
+                    1608
+                  ],
+                  [
+                    258,
+                    1608
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_127_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    562,
+                    1584
+                  ],
+                  [
+                    648,
+                    1584
+                  ],
+                  [
+                    562,
+                    1616
+                  ],
+                  [
+                    648,
+                    1616
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_128_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    726,
+                    1588
+                  ],
+                  [
+                    824,
+                    1588
+                  ],
+                  [
+                    726,
+                    1622
+                  ],
+                  [
+                    824,
+                    1622
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_129_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    914,
+                    1592
+                  ],
+                  [
+                    1002,
+                    1592
+                  ],
+                  [
+                    914,
+                    1626
+                  ],
+                  [
+                    1002,
+                    1626
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_130_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    48,
+                    1626
+                  ],
+                  [
+                    116,
+                    1626
+                  ],
+                  [
+                    48,
+                    1664
+                  ],
+                  [
+                    116,
+                    1664
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_131_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    136,
+                    1628
+                  ],
+                  [
+                    258,
+                    1628
+                  ],
+                  [
+                    136,
+                    1664
+                  ],
+                  [
+                    258,
+                    1664
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_132_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    278,
+                    1632
+                  ],
+                  [
+                    362,
+                    1632
+                  ],
+                  [
+                    278,
+                    1666
+                  ],
+                  [
+                    362,
+                    1666
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_133_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    384,
+                    1636
+                  ],
+                  [
+                    434,
+                    1636
+                  ],
+                  [
+                    384,
+                    1666
+                  ],
+                  [
+                    434,
+                    1666
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_134_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    456,
+                    1640
+                  ],
+                  [
+                    486,
+                    1640
+                  ],
+                  [
+                    456,
+                    1670
+                  ],
+                  [
+                    486,
+                    1670
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_135_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    754,
+                    1644
+                  ],
+                  [
+                    824,
+                    1644
+                  ],
+                  [
+                    754,
+                    1678
+                  ],
+                  [
+                    824,
+                    1678
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_136_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    932,
+                    1648
+                  ],
+                  [
+                    1000,
+                    1648
+                  ],
+                  [
+                    932,
+                    1682
+                  ],
+                  [
+                    1000,
+                    1682
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_137_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    46,
+                    1684
+                  ],
+                  [
+                    204,
+                    1684
+                  ],
+                  [
+                    46,
+                    1720
+                  ],
+                  [
+                    204,
+                    1720
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_138_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    224,
+                    1688
+                  ],
+                  [
+                    270,
+                    1688
+                  ],
+                  [
+                    224,
+                    1722
+                  ],
+                  [
+                    270,
+                    1722
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_139_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    754,
+                    1702
+                  ],
+                  [
+                    822,
+                    1702
+                  ],
+                  [
+                    754,
+                    1734
+                  ],
+                  [
+                    822,
+                    1734
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_140_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    932,
+                    1706
+                  ],
+                  [
+                    1000,
+                    1706
+                  ],
+                  [
+                    932,
+                    1740
+                  ],
+                  [
+                    1000,
+                    1740
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_141_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    44,
+                    1740
+                  ],
+                  [
+                    186,
+                    1740
+                  ],
+                  [
+                    44,
+                    1776
+                  ],
+                  [
+                    186,
+                    1776
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_142_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    204,
+                    1744
+                  ],
+                  [
+                    256,
+                    1744
+                  ],
+                  [
+                    204,
+                    1778
+                  ],
+                  [
+                    256,
+                    1778
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_143_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    278,
+                    1746
+                  ],
+                  [
+                    340,
+                    1746
+                  ],
+                  [
+                    278,
+                    1778
+                  ],
+                  [
+                    340,
+                    1778
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_144_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    364,
+                    1748
+                  ],
+                  [
+                    470,
+                    1748
+                  ],
+                  [
+                    364,
+                    1782
+                  ],
+                  [
+                    470,
+                    1782
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_145_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    754,
+                    1758
+                  ],
+                  [
+                    824,
+                    1758
+                  ],
+                  [
+                    754,
+                    1792
+                  ],
+                  [
+                    824,
+                    1792
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_146_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    932,
+                    1762
+                  ],
+                  [
+                    1000,
+                    1762
+                  ],
+                  [
+                    932,
+                    1796
+                  ],
+                  [
+                    1000,
+                    1796
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_147_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    44,
+                    1796
+                  ],
+                  [
+                    96,
+                    1796
+                  ],
+                  [
+                    44,
+                    1830
+                  ],
+                  [
+                    96,
+                    1830
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_148_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    116,
+                    1798
+                  ],
+                  [
+                    256,
+                    1798
+                  ],
+                  [
+                    116,
+                    1834
+                  ],
+                  [
+                    256,
+                    1834
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_149_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    276,
+                    1802
+                  ],
+                  [
+                    396,
+                    1802
+                  ],
+                  [
+                    276,
+                    1836
+                  ],
+                  [
+                    396,
+                    1836
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_150_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    738,
+                    1814
+                  ],
+                  [
+                    822,
+                    1814
+                  ],
+                  [
+                    738,
+                    1848
+                  ],
+                  [
+                    822,
+                    1848
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_151_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    912,
+                    1818
+                  ],
+                  [
+                    1000,
+                    1818
+                  ],
+                  [
+                    912,
+                    1852
+                  ],
+                  [
+                    1000,
+                    1852
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_152_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    46,
+                    1852
+                  ],
+                  [
+                    252,
+                    1852
+                  ],
+                  [
+                    46,
+                    1888
+                  ],
+                  [
+                    252,
+                    1888
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_153_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    276,
+                    1856
+                  ],
+                  [
+                    364,
+                    1856
+                  ],
+                  [
+                    276,
+                    1892
+                  ],
+                  [
+                    364,
+                    1892
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_154_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    384,
+                    1862
+                  ],
+                  [
+                    466,
+                    1862
+                  ],
+                  [
+                    384,
+                    1894
+                  ],
+                  [
+                    466,
+                    1894
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_155_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    738,
+                    1870
+                  ],
+                  [
+                    822,
+                    1870
+                  ],
+                  [
+                    738,
+                    1902
+                  ],
+                  [
+                    822,
+                    1902
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_156_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    912,
+                    1874
+                  ],
+                  [
+                    1000,
+                    1874
+                  ],
+                  [
+                    912,
+                    1906
+                  ],
+                  [
+                    1000,
+                    1906
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_157_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    46,
+                    1908
+                  ],
+                  [
+                    382,
+                    1908
+                  ],
+                  [
+                    46,
+                    1946
+                  ],
+                  [
+                    382,
+                    1946
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_158_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    400,
+                    1916
+                  ],
+                  [
+                    488,
+                    1916
+                  ],
+                  [
+                    400,
+                    1948
+                  ],
+                  [
+                    488,
+                    1948
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_159_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    738,
+                    1924
+                  ],
+                  [
+                    822,
+                    1924
+                  ],
+                  [
+                    738,
+                    1954
+                  ],
+                  [
+                    822,
+                    1954
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_160_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    914,
+                    1928
+                  ],
+                  [
+                    998,
+                    1928
+                  ],
+                  [
+                    914,
+                    1956
+                  ],
+                  [
+                    998,
+                    1956
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_161_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    84,
+                    1962
+                  ],
+                  [
+                    242,
+                    1962
+                  ],
+                  [
+                    84,
+                    1996
+                  ],
+                  [
+                    242,
+                    1996
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_162_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    260,
+                    1966
+                  ],
+                  [
+                    428,
+                    1966
+                  ],
+                  [
+                    260,
+                    2000
+                  ],
+                  [
+                    428,
+                    2000
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_163_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    474,
+                    1970
+                  ],
+                  [
+                    506,
+                    1970
+                  ],
+                  [
+                    474,
+                    2002
+                  ],
+                  [
+                    506,
+                    2002
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_164_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    648,
+                    1974
+                  ],
+                  [
+                    784,
+                    1974
+                  ],
+                  [
+                    648,
+                    2008
+                  ],
+                  [
+                    784,
+                    2008
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_165_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    894,
+                    1976
+                  ],
+                  [
+                    992,
+                    1976
+                  ],
+                  [
+                    894,
+                    2012
+                  ],
+                  [
+                    992,
+                    2012
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_166_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    968,
+                    1978
+                  ],
+                  [
+                    998,
+                    1978
+                  ],
+                  [
+                    968,
+                    2000
+                  ],
+                  [
+                    998,
+                    2000
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_167_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    546,
+                    1978
+                  ],
+                  [
+                    628,
+                    1978
+                  ],
+                  [
+                    546,
+                    2004
+                  ],
+                  [
+                    628,
+                    2004
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_168_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    544,
+                    2028
+                  ],
+                  [
+                    610,
+                    2028
+                  ],
+                  [
+                    544,
+                    2060
+                  ],
+                  [
+                    610,
+                    2060
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_169_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    630,
+                    2030
+                  ],
+                  [
+                    664,
+                    2030
+                  ],
+                  [
+                    630,
+                    2062
+                  ],
+                  [
+                    664,
+                    2062
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_170_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    930,
+                    2036
+                  ],
+                  [
+                    1000,
+                    2036
+                  ],
+                  [
+                    930,
+                    2070
+                  ],
+                  [
+                    1000,
+                    2070
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_171_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    542,
+                    2084
+                  ],
+                  [
+                    644,
+                    2084
+                  ],
+                  [
+                    542,
+                    2120
+                  ],
+                  [
+                    644,
+                    2120
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_172_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    916,
+                    2092
+                  ],
+                  [
+                    1000,
+                    2092
+                  ],
+                  [
+                    916,
+                    2128
+                  ],
+                  [
+                    1000,
+                    2128
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_173_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    632,
+                    2146
+                  ],
+                  [
+                    712,
+                    2146
+                  ],
+                  [
+                    632,
+                    2180
+                  ],
+                  [
+                    712,
+                    2180
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_174_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    470,
+                    2148
+                  ],
+                  [
+                    608,
+                    2148
+                  ],
+                  [
+                    470,
+                    2178
+                  ],
+                  [
+                    608,
+                    2178
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_175_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    894,
+                    2150
+                  ],
+                  [
+                    1000,
+                    2150
+                  ],
+                  [
+                    894,
+                    2186
+                  ],
+                  [
+                    1000,
+                    2186
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_176_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    42,
+                    2190
+                  ],
+                  [
+                    90,
+                    2190
+                  ],
+                  [
+                    42,
+                    2224
+                  ],
+                  [
+                    90,
+                    2224
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_177_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    112,
+                    2194
+                  ],
+                  [
+                    518,
+                    2194
+                  ],
+                  [
+                    112,
+                    2234
+                  ],
+                  [
+                    518,
+                    2234
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_178_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    42,
+                    2248
+                  ],
+                  [
+                    338,
+                    2248
+                  ],
+                  [
+                    42,
+                    2286
+                  ],
+                  [
+                    338,
+                    2286
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_179_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    42,
+                    2304
+                  ],
+                  [
+                    218,
+                    2304
+                  ],
+                  [
+                    42,
+                    2340
+                  ],
+                  [
+                    218,
+                    2340
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_180_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    894,
+                    2322
+                  ],
+                  [
+                    998,
+                    2322
+                  ],
+                  [
+                    894,
+                    2354
+                  ],
+                  [
+                    998,
+                    2354
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_181_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    348,
+                    2366
+                  ],
+                  [
+                    746,
+                    2366
+                  ],
+                  [
+                    348,
+                    2410
+                  ],
+                  [
+                    746,
+                    2410
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_182_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    278,
+                    2372
+                  ],
+                  [
+                    322,
+                    2372
+                  ],
+                  [
+                    278,
+                    2402
+                  ],
+                  [
+                    322,
+                    2402
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_183_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    774,
+                    2376
+                  ],
+                  [
+                    864,
+                    2376
+                  ],
+                  [
+                    774,
+                    2412
+                  ],
+                  [
+                    864,
+                    2412
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_184_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    368,
+                    2466
+                  ],
+                  [
+                    480,
+                    2466
+                  ],
+                  [
+                    368,
+                    2500
+                  ],
+                  [
+                    480,
+                    2500
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_185_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    114,
+                    2466
+                  ],
+                  [
+                    344,
+                    2466
+                  ],
+                  [
+                    114,
+                    2502
+                  ],
+                  [
+                    344,
+                    2502
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_186_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    592,
+                    2472
+                  ],
+                  [
+                    626,
+                    2472
+                  ],
+                  [
+                    592,
+                    2506
+                  ],
+                  [
+                    626,
+                    2506
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_187_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    698,
+                    2476
+                  ],
+                  [
+                    732,
+                    2476
+                  ],
+                  [
+                    698,
+                    2510
+                  ],
+                  [
+                    732,
+                    2510
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_188_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    768,
+                    2478
+                  ],
+                  [
+                    978,
+                    2478
+                  ],
+                  [
+                    768,
+                    2518
+                  ],
+                  [
+                    978,
+                    2518
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_189_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    646,
+                    2482
+                  ],
+                  [
+                    678,
+                    2482
+                  ],
+                  [
+                    646,
+                    2508
+                  ],
+                  [
+                    678,
+                    2508
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_190_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    222,
+                    2522
+                  ],
+                  [
+                    380,
+                    2522
+                  ],
+                  [
+                    222,
+                    2558
+                  ],
+                  [
+                    380,
+                    2558
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_191_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    400,
+                    2524
+                  ],
+                  [
+                    536,
+                    2524
+                  ],
+                  [
+                    400,
+                    2560
+                  ],
+                  [
+                    536,
+                    2560
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_192_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    78,
+                    2526
+                  ],
+                  [
+                    202,
+                    2526
+                  ],
+                  [
+                    78,
+                    2560
+                  ],
+                  [
+                    202,
+                    2560
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_193_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    556,
+                    2530
+                  ],
+                  [
+                    726,
+                    2530
+                  ],
+                  [
+                    556,
+                    2572
+                  ],
+                  [
+                    726,
+                    2572
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_194_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    748,
+                    2538
+                  ],
+                  [
+                    812,
+                    2538
+                  ],
+                  [
+                    748,
+                    2572
+                  ],
+                  [
+                    812,
+                    2572
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_195_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    838,
+                    2540
+                  ],
+                  [
+                    890,
+                    2540
+                  ],
+                  [
+                    838,
+                    2574
+                  ],
+                  [
+                    890,
+                    2574
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_196_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    928,
+                    2542
+                  ],
+                  [
+                    1014,
+                    2542
+                  ],
+                  [
+                    928,
+                    2580
+                  ],
+                  [
+                    1014,
+                    2580
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_197_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    426,
+                    2582
+                  ],
+                  [
+                    512,
+                    2582
+                  ],
+                  [
+                    426,
+                    2618
+                  ],
+                  [
+                    512,
+                    2618
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_198_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    530,
+                    2588
+                  ],
+                  [
+                    670,
+                    2588
+                  ],
+                  [
+                    530,
+                    2626
+                  ],
+                  [
+                    670,
+                    2626
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_199_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    382,
+                    2638
+                  ],
+                  [
+                    516,
+                    2638
+                  ],
+                  [
+                    382,
+                    2674
+                  ],
+                  [
+                    516,
+                    2674
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_200_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    276,
+                    2638
+                  ],
+                  [
+                    358,
+                    2638
+                  ],
+                  [
+                    276,
+                    2670
+                  ],
+                  [
+                    358,
+                    2670
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_201_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    540,
+                    2644
+                  ],
+                  [
+                    708,
+                    2644
+                  ],
+                  [
+                    540,
+                    2686
+                  ],
+                  [
+                    708,
+                    2686
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_202_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    732,
+                    2654
+                  ],
+                  [
+                    818,
+                    2654
+                  ],
+                  [
+                    732,
+                    2690
+                  ],
+                  [
+                    818,
+                    2690
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_203_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    328,
+                    2694
+                  ],
+                  [
+                    432,
+                    2694
+                  ],
+                  [
+                    328,
+                    2726
+                  ],
+                  [
+                    432,
+                    2726
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_204_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    240,
+                    2694
+                  ],
+                  [
+                    288,
+                    2694
+                  ],
+                  [
+                    240,
+                    2728
+                  ],
+                  [
+                    288,
+                    2728
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_205_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    452,
+                    2696
+                  ],
+                  [
+                    536,
+                    2696
+                  ],
+                  [
+                    452,
+                    2732
+                  ],
+                  [
+                    536,
+                    2732
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_206_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    766,
+                    2714
+                  ],
+                  [
+                    854,
+                    2714
+                  ],
+                  [
+                    766,
+                    2750
+                  ],
+                  [
+                    854,
+                    2750
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_207_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    368,
+                    2748
+                  ],
+                  [
+                    482,
+                    2748
+                  ],
+                  [
+                    368,
+                    2786
+                  ],
+                  [
+                    482,
+                    2786
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_208_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    504,
+                    2756
+                  ],
+                  [
+                    568,
+                    2756
+                  ],
+                  [
+                    504,
+                    2794
+                  ],
+                  [
+                    568,
+                    2794
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_209_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    590,
+                    2762
+                  ],
+                  [
+                    730,
+                    2762
+                  ],
+                  [
+                    590,
+                    2802
+                  ],
+                  [
+                    730,
+                    2802
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_210_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    392,
+                    2808
+                  ],
+                  [
+                    508,
+                    2808
+                  ],
+                  [
+                    392,
+                    2848
+                  ],
+                  [
+                    508,
+                    2848
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_211_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    176,
+                    2810
+                  ],
+                  [
+                    320,
+                    2810
+                  ],
+                  [
+                    176,
+                    2848
+                  ],
+                  [
+                    320,
+                    2848
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_212_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    340,
+                    2816
+                  ],
+                  [
+                    374,
+                    2816
+                  ],
+                  [
+                    340,
+                    2838
+                  ],
+                  [
+                    374,
+                    2838
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_213_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    582,
+                    2818
+                  ],
+                  [
+                    720,
+                    2818
+                  ],
+                  [
+                    582,
+                    2862
+                  ],
+                  [
+                    720,
+                    2862
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_214_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    530,
+                    2824
+                  ],
+                  [
+                    564,
+                    2824
+                  ],
+                  [
+                    530,
+                    2852
+                  ],
+                  [
+                    564,
+                    2852
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_215_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    794,
+                    2834
+                  ],
+                  [
+                    916,
+                    2834
+                  ],
+                  [
+                    794,
+                    2874
+                  ],
+                  [
+                    916,
+                    2874
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_216_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    740,
+                    2836
+                  ],
+                  [
+                    770,
+                    2836
+                  ],
+                  [
+                    740,
+                    2864
+                  ],
+                  [
+                    770,
+                    2864
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_217_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    424,
+                    2870
+                  ],
+                  [
+                    456,
+                    2870
+                  ],
+                  [
+                    424,
+                    2904
+                  ],
+                  [
+                    456,
+                    2904
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_218_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    214,
+                    2870
+                  ],
+                  [
+                    402,
+                    2870
+                  ],
+                  [
+                    214,
+                    2904
+                  ],
+                  [
+                    402,
+                    2904
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_219_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    158,
+                    2880
+                  ],
+                  [
+                    192,
+                    2880
+                  ],
+                  [
+                    158,
+                    2906
+                  ],
+                  [
+                    192,
+                    2906
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_220_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    476,
+                    2882
+                  ],
+                  [
+                    666,
+                    2882
+                  ],
+                  [
+                    476,
+                    2920
+                  ],
+                  [
+                    666,
+                    2920
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_221_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    212,
+                    2922
+                  ],
+                  [
+                    476,
+                    2922
+                  ],
+                  [
+                    212,
+                    2962
+                  ],
+                  [
+                    476,
+                    2962
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_222_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    496,
+                    2930
+                  ],
+                  [
+                    528,
+                    2930
+                  ],
+                  [
+                    496,
+                    2962
+                  ],
+                  [
+                    528,
+                    2962
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_223_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    140,
+                    2930
+                  ],
+                  [
+                    194,
+                    2930
+                  ],
+                  [
+                    140,
+                    2966
+                  ],
+                  [
+                    194,
+                    2966
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_224_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    546,
+                    2936
+                  ],
+                  [
+                    668,
+                    2936
+                  ],
+                  [
+                    546,
+                    2970
+                  ],
+                  [
+                    668,
+                    2970
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_225_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    688,
+                    2950
+                  ],
+                  [
+                    898,
+                    2950
+                  ],
+                  [
+                    688,
+                    2988
+                  ],
+                  [
+                    898,
+                    2988
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_226_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    918,
+                    2966
+                  ],
+                  [
+                    952,
+                    2966
+                  ],
+                  [
+                    918,
+                    2994
+                  ],
+                  [
+                    952,
+                    2994
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_227_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    230,
+                    2980
+                  ],
+                  [
+                    616,
+                    2980
+                  ],
+                  [
+                    230,
+                    3020
+                  ],
+                  [
+                    616,
+                    3020
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_228_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    672,
+                    2994
+                  ],
+                  [
+                    866,
+                    2994
+                  ],
+                  [
+                    672,
+                    3036
+                  ],
+                  [
+                    866,
+                    3036
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_229_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    418,
+                    3040
+                  ],
+                  [
+                    536,
+                    3040
+                  ],
+                  [
+                    418,
+                    3076
+                  ],
+                  [
+                    536,
+                    3076
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_230_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    310,
+                    3040
+                  ],
+                  [
+                    394,
+                    3040
+                  ],
+                  [
+                    310,
+                    3076
+                  ],
+                  [
+                    394,
+                    3076
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_231_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    558,
+                    3046
+                  ],
+                  [
+                    626,
+                    3046
+                  ],
+                  [
+                    558,
+                    3080
+                  ],
+                  [
+                    626,
+                    3080
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_232_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    646,
+                    3048
+                  ],
+                  [
+                    822,
+                    3048
+                  ],
+                  [
+                    646,
+                    3090
+                  ],
+                  [
+                    822,
+                    3090
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_233_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    456,
+                    3162
+                  ],
+                  [
+                    494,
+                    3162
+                  ],
+                  [
+                    456,
+                    3204
+                  ],
+                  [
+                    494,
+                    3204
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_234_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    304,
+                    3164
+                  ],
+                  [
+                    372,
+                    3164
+                  ],
+                  [
+                    304,
+                    3208
+                  ],
+                  [
+                    372,
+                    3208
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_235_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    594,
+                    3166
+                  ],
+                  [
+                    658,
+                    3166
+                  ],
+                  [
+                    594,
+                    3208
+                  ],
+                  [
+                    658,
+                    3208
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_236_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    136,
+                    3168
+                  ],
+                  [
+                    280,
+                    3168
+                  ],
+                  [
+                    136,
+                    3214
+                  ],
+                  [
+                    280,
+                    3214
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_237_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    684,
+                    3170
+                  ],
+                  [
+                    794,
+                    3170
+                  ],
+                  [
+                    684,
+                    3216
+                  ],
+                  [
+                    794,
+                    3216
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_238_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    788,
+                    3174
+                  ],
+                  [
+                    944,
+                    3174
+                  ],
+                  [
+                    788,
+                    3222
+                  ],
+                  [
+                    944,
+                    3222
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_239_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    248,
+                    3278
+                  ],
+                  [
+                    516,
+                    3278
+                  ],
+                  [
+                    248,
+                    3302
+                  ],
+                  [
+                    516,
+                    3302
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_240_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    540,
+                    3280
+                  ],
+                  [
+                    606,
+                    3280
+                  ],
+                  [
+                    540,
+                    3302
+                  ],
+                  [
+                    606,
+                    3302
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_241_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    616,
+                    3284
+                  ],
+                  [
+                    854,
+                    3284
+                  ],
+                  [
+                    616,
+                    3302
+                  ],
+                  [
+                    854,
+                    3302
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": ""
+              },
+              {
+                "NomRegion": "Region_242_Ticket_1_20180228_110307.jpg",
+                "CoordsRegion": [
+                  [
+                    26,
+                    360
+                  ],
+                  [
+                    278,
+                    360
+                  ],
+                  [
+                    26,
+                    577
+                  ],
+                  [
+                    278,
+                    577
+                  ]
+                ],
+                "Texto OCR": "",
+                "Texto Usuario": "IC ANA\nZEHGNONTA\n\nMAW CRNG ilo:\n\nielegpogpe\n\f"
+              }
+            ]
+          },
+          {
+            "Nomticket": "Ticket_2_20180228_110307.jpg",
+            "CoordsTicket": [
+              [
+                1547,
+                888
+              ],
+              [
+                2247,
+                888
+              ],
+              [
+                1547,
+                3892
+              ],
+              [
+                2247,
+                3892
+              ]
+            ],
+            "FechaTicket": "",
+            "EstablecimientoTicket": ""
+          }
+        ]
       }
     ],
     "Imagen_2": [
@@ -3147,8 +8768,5 @@
         "NombreImagen": "20180627_094738.jpg"
       }
     ]
-  },
-  "Dir": {
-    "NomCarpeta": "C:/Users/PC/Desktop/Estancia/Proyecto/FotosTickets"
   }
 }

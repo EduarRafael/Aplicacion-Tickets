@@ -249,12 +249,14 @@ class  mainWindow(QDialog):
         self.imagenSeleccionada = True
         #print(len(self.listaTickets[self.indice]))
         if(len(self.listaTickets[self.indice])==0):
+            #Si no tiene tickets se oculta la imagen y se limpian los widgets
             self.img_ticket.hide()
             self.comboTicket.clear()
             self.establecimientoEdit.setText("")
             fechaWidget = QDate(2021,1,11)
             self.fechaEdit.setDate(fechaWidget)            
         else:
+            #Si la imagen tiene tickets ya recortados se cargan y se coloca el primero de ellos
             self.comboTicket.clear()
             i = len(self.listaTickets[self.indice])
             for x in range(i):
@@ -377,8 +379,8 @@ class  mainWindow(QDialog):
 
 
     def vistaTicketDialog(self):
-        numTickets= self.comboTicket.count()
-        if(numTickets>=1):
+        numTickets= self.comboTicket.count()  
+        if(numTickets>=1):#Verifica que al menos exista 1 ticket
             self.indiceTicket = self.comboTicket.currentIndex()
             self.vistaTicketD.comboRegion.clear()
             #print(self.listaTickets[self.indice][indiceTicket].getCoords())
@@ -386,6 +388,7 @@ class  mainWindow(QDialog):
             imgTicketAux = imgTicket.copy()
             regiones = self.listaTickets[self.indice][self.indiceTicket].getRegiones()
             if len(regiones)==0:
+                #Si el ticket seleccionado no tiene regiones procesadas, se procesa para la busqueda automatica de texto en el ticket seleccionado
                 arrayRegionesCoords, imgTicketRegiones = cortarRegiones(imgTicket)#Se procesa el ticket para encontrar las posibles regiones con texto
                 nomticket = self.listaTickets[self.indice][self.indiceTicket].getNomTicket()#Se toma el nombre del ticket seleccionado
                 for x in range(len(arrayRegionesCoords[0])):
@@ -395,11 +398,13 @@ class  mainWindow(QDialog):
                     #Se añade el nombre de las regiones al comboBox
                     self.vistaTicketD.comboRegion.addItem(nombreRegion)  
             elif len(regiones)>1:
+                #Si el ticket seleccionado tiene regiones procesadas, se cargan en el dialogo
                 arrayRegionesCoords = self.listaTickets[self.indice][self.indiceTicket].getCoordsRegiones()#Obtiene las coordenadas de las regiones
                 arrayNombresRegiones = self.listaTickets[self.indice][self.indiceTicket].getNombresRegiones()#Obtiene los nombres de las regiones
                 imgTicketRegiones = dibujarRegiones(imgTicketAux,arrayRegionesCoords)
                 for x in range(len(arrayNombresRegiones)):
                     self.vistaTicketD.comboRegion.addItem(arrayNombresRegiones[x])
+            #Configuraciones para el dialogo
             self.vistaTicketD.setModal(True)
             self.vistaTicketD.imagenTicket = imgTicket
             imgLabel = formatoPixMap(imgTicketRegiones)
