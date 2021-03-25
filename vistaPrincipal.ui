@@ -30,40 +30,8 @@
    <bool>false</bool>
   </property>
   <layout class="QGridLayout" name="gridLayout">
-   <item row="12" column="3" colspan="2">
-    <widget class="QPushButton" name="btnGurdarInfo">
-     <property name="font">
-      <font>
-       <pointsize>9</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="focusPolicy">
-      <enum>Qt::NoFocus</enum>
-     </property>
-     <property name="text">
-      <string>Guardar Info Ticket</string>
-     </property>
-     <property name="autoDefault">
-      <bool>true</bool>
-     </property>
-    </widget>
-   </item>
-   <item row="6" column="3">
-    <widget class="QLabel" name="label_ticket">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-       <horstretch>10</horstretch>
-       <verstretch>10</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>60</width>
-       <height>15</height>
-      </size>
-     </property>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_6">
      <property name="font">
       <font>
        <pointsize>10</pointsize>
@@ -72,11 +40,21 @@
       </font>
      </property>
      <property name="text">
-      <string>Ticket</string>
+      <string>Carpetas/Json</string>
      </property>
     </widget>
    </item>
-   <item row="2" column="3" rowspan="4" colspan="2">
+   <item row="11" column="3" colspan="2">
+    <widget class="QLineEdit" name="establecimientoEdit">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="3" rowspan="6" colspan="2">
     <widget class="QLabel" name="img_ticket">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Maximum" vsizetype="Minimum">
@@ -95,97 +73,14 @@
      </property>
     </widget>
    </item>
-   <item row="8" column="3">
-    <widget class="QLabel" name="label">
+   <item row="4" column="0">
+    <widget class="QLabel" name="label_5">
      <property name="sizePolicy">
-      <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>20</horstretch>
+       <verstretch>10</verstretch>
       </sizepolicy>
      </property>
-     <property name="maximumSize">
-      <size>
-       <width>150</width>
-       <height>15</height>
-      </size>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>9</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="text">
-      <string>Establecimiento</string>
-     </property>
-    </widget>
-   </item>
-   <item row="13" column="4">
-    <widget class="QPushButton" name="btnvistaTicket">
-     <property name="font">
-      <font>
-       <pointsize>9</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="text">
-      <string>Procesar Ticket</string>
-     </property>
-    </widget>
-   </item>
-   <item row="10" column="3">
-    <widget class="QLabel" name="label_2">
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>15</height>
-      </size>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>9</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="text">
-      <string>Fecha Ticket</string>
-     </property>
-    </widget>
-   </item>
-   <item row="9" column="3" colspan="2">
-    <widget class="QLineEdit" name="establecimientoEdit">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-    </widget>
-   </item>
-   <item row="2" column="1" rowspan="9" colspan="2">
-    <widget class="QLabel" name="imagen_1">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-       <horstretch>0</horstretch>
-       <verstretch>1</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>710</width>
-       <height>850</height>
-      </size>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="0">
-    <widget class="QPushButton" name="btnAbrirJson">
      <property name="font">
       <font>
        <pointsize>10</pointsize>
@@ -194,27 +89,20 @@
       </font>
      </property>
      <property name="text">
-      <string>Abrir Json</string>
+      <string>Imagenes</string>
      </property>
     </widget>
    </item>
-   <item row="12" column="1" rowspan="4" colspan="2">
-    <widget class="QPushButton" name="recortarTicket">
-     <property name="maximumSize">
-      <size>
-       <width>860</width>
-       <height>16777215</height>
-      </size>
+   <item row="5" column="0" rowspan="13">
+    <widget class="QListWidget" name="listImagenes">
+     <property name="enabled">
+      <bool>true</bool>
      </property>
-     <property name="font">
-      <font>
-       <pointsize>9</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="text">
-      <string>Recortar Imagen(Ticket)</string>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
      </property>
     </widget>
    </item>
@@ -232,34 +120,17 @@
      </property>
     </widget>
    </item>
-   <item row="13" column="3">
-    <widget class="QPushButton" name="btnEliminarTicket">
-     <property name="font">
-      <font>
-       <pointsize>9</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
+   <item row="9" column="3" colspan="2">
+    <widget class="QComboBox" name="comboTicket">
+     <property name="editable">
+      <bool>false</bool>
      </property>
-     <property name="text">
-      <string>Eliminar Ticket</string>
+     <property name="currentText">
+      <string/>
      </property>
     </widget>
    </item>
-   <item row="4" column="0" rowspan="12">
-    <widget class="QListWidget" name="listImagenes">
-     <property name="enabled">
-      <bool>true</bool>
-     </property>
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-    </widget>
-   </item>
-   <item row="11" column="3" colspan="2">
+   <item row="13" column="3" colspan="2">
     <widget class="QDateEdit" name="fechaEdit">
      <property name="wrapping">
       <bool>true</bool>
@@ -287,13 +158,86 @@
      </property>
     </widget>
    </item>
-   <item row="7" column="3" colspan="2">
-    <widget class="QComboBox" name="comboTicket">
-     <property name="editable">
-      <bool>false</bool>
+   <item row="12" column="3">
+    <widget class="QLabel" name="label_2">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>15</height>
+      </size>
      </property>
-     <property name="currentText">
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Fecha Ticket</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1" rowspan="11" colspan="2">
+    <widget class="QLabel" name="imagen_1">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>1</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>710</width>
+       <height>850</height>
+      </size>
+     </property>
+     <property name="text">
       <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QListWidget" name="listJsons">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+    </widget>
+   </item>
+   <item row="14" column="3" colspan="2">
+    <widget class="QPushButton" name="btnGurdarInfo">
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="text">
+      <string>Guardar Info Ticket</string>
+     </property>
+     <property name="autoDefault">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QPushButton" name="btnAbrirJson">
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Abrir Json</string>
      </property>
     </widget>
    </item>
@@ -311,6 +255,106 @@
      </property>
     </widget>
    </item>
+   <item row="10" column="3">
+    <widget class="QLabel" name="label">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>150</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Establecimiento</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="3">
+    <widget class="QLabel" name="label_ticket">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+       <horstretch>10</horstretch>
+       <verstretch>10</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>60</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Ticket</string>
+     </property>
+    </widget>
+   </item>
+   <item row="14" column="1" rowspan="4" colspan="2">
+    <widget class="QPushButton" name="recortarTicket">
+     <property name="maximumSize">
+      <size>
+       <width>860</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Recortar Imagen(Ticket)</string>
+     </property>
+    </widget>
+   </item>
+   <item row="15" column="3">
+    <widget class="QPushButton" name="btnEliminarTicket">
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Eliminar Ticket</string>
+     </property>
+    </widget>
+   </item>
+   <item row="15" column="4">
+    <widget class="QPushButton" name="btnvistaTicket">
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Procesar Ticket</string>
+     </property>
+    </widget>
+   </item>
    <item row="3" column="0">
     <widget class="QPushButton" name="botonAbrir">
      <property name="font">
@@ -322,16 +366,6 @@
      </property>
      <property name="text">
       <string>Abir Repositorio</string>
-     </property>
-    </widget>
-   </item>
-   <item row="2" column="0">
-    <widget class="QListWidget" name="listJsons">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
      </property>
     </widget>
    </item>

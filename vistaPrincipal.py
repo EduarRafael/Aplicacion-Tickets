@@ -47,17 +47,14 @@ class  mainWindow(QDialog):
             self.anchowin, self.alturawin = user32.GetSystemMetrics(0), user32.GetSystemMetrics(1)
         self.anchoImg = round(85/100*self.anchowin)
         self.alturaImg = round(85/100*self.alturawin)
-        self.contRegiones=0
+        self.archivosJson = []
+        self.listaTickets = []
         self.imagenSeleccionada = False
         #Carga automatica de archivo
-        respusta = cargarArchivo()
+        nombreArchivo = "data.json"
+        respusta = cargarArchivo(nombreArchivo)
         if respusta == False:
-            msg = QMessageBox()
-            msg.setIcon(QMessageBox.Critical)
-            msg.setText("Error al abrir el archivo")
-            msg.setInformativeText('No se encontro el archivo Json predeterminado o no cumple con las especificaciones')
-            msg.setWindowTitle("Error")
-            msg.exec_()
+            pass
         else:
             self.dicImagenes = respusta[0]
             self.listaTickets = respusta[1]
@@ -66,60 +63,181 @@ class  mainWindow(QDialog):
                 imgNom = self.dicImagenes ["Imagenes"]["Imagen_"+str(x)][0]["NombreImagen"]
                 self.listImagenes.addItem(imgNom)
         #Declaracion de objetos de las vistas
-        self.listJsons.hide()
         self.recorteTicketD = recorteTicket(self)#Objeto para dialogo del recorte del ticket  
         self.vistaTicketD = vistaTicket(self)
+
         #Declaracion de eventos de los botones/widgets
         self.botonAbrir.clicked.connect(self.abirRepo)#Evento para el botonAbrir
         self.listImagenes.clicked.connect(self.selectImg)#Evento para listWidget
         self.listImagenes.activated.connect(self.selectImg)#Evento para listWidget
+        self.listJsons.activated.connect(self.selectJson)
         self.recortarTicket.clicked.connect(self.recortarTDialog)
         self.btnvistaTicket.clicked.connect(self.vistaTicketDialog)
         self.btnEliminarTicket.clicked.connect(self.eliminarTicket)
         self.btnGurdarInfo.clicked.connect(self.guardarInfoTicket)
+        self.btnAbrirJson.clicked.connect(self.abrirJson)
         self.comboTicket.activated.connect(self.cambioTicket)
         
     
     #Funcion para cuando el usuario quiera salir del programa    
     def closeEvent(self, event):
-        guardarJson(self.listaTickets,self.dicImagenes)
+        if(len(self.listaTickets)==0):
+            pass
+        else:
+            guardarJson(self.listaTickets,self.dicImagenes,"")
         #Agregar la parte para guardar el archivo
     
+    def abrirJson(self):
+        if(len(self.listaTickets)>0):
+            qm = QMessageBox
+            ret = qm.question(self,'', "Ya se tiene una carpeta abierta, ¿Desea guardar el trabajo realizado?", qm.Yes | qm.No)
+            if ret == qm.Yes:
+                file, _ = QFileDialog.getSaveFileName(self, 'Guardar Archivo', QDir.homePath(), "All Files (*);;Json Files (*.json)")
+                if file:
+                    nombre = os.path.basename(file)
+                    guardarJson(self.listaTickets,self.dicImagenes,str(file))
+                    self.archivosJson.append(str(file))
+                    self.listJsons.addItem(nombre)
+                file, _ = QFileDialog.getOpenFileName(self, 'Buscar Archivo', QDir.homePath(), "All Files (*);;Json Files (*.json)")
+                rutaArchivo = str(file)
+                respusta = cargarArchivo(rutaArchivo)
+                nombreArchivo = os.path.basename(file)
+                if respusta == False:
+                    msg = QMessageBox()
+                    msg.setIcon(QMessageBox.Critical)
+                    msg.setText("Error al abrir el archivo")
+                    msg.setInformativeText('No se encontro el archivo Json o no cumple con las especificaciones')
+                    msg.setWindowTitle("Error")
+                    msg.exec_()
+                else:
+                    self.listImagenes.clear()
+                    self.archivosJson.append(str(file))
+                    self.listJsons.addItem(nombreArchivo)
+                    self.dicImagenes = respusta[0]
+                    self.listaTickets = respusta[1]
+                    self.directorio = self.dicImagenes["Dir"]["NomCarpeta"]
+                    for x in range (len(self.dicImagenes["Imagenes"])):
+                        imgNom = self.dicImagenes ["Imagenes"]["Imagen_"+str(x)][0]["NombreImagen"]
+                        self.listImagenes.addItem(imgNom)
+            elif ret == qm.No:
+                file, _ = QFileDialog.getOpenFileName(self, 'Buscar Archivo', QDir.homePath(), "All Files (*);;Json Files (*.json)")
+                rutaArchivo = str(file)
+                respusta = cargarArchivo(rutaArchivo)
+                nombreArchivo = os.path.basename(file)
+                if respusta == False:
+                    msg = QMessageBox()
+                    msg.setIcon(QMessageBox.Critical)
+                    msg.setText("Error al abrir el archivo")
+                    msg.setInformativeText('No se encontro el archivo Json o no cumple con las especificaciones')
+                    msg.setWindowTitle("Error")
+                    msg.exec_()
+                else:
+                    self.listImagenes.clear()
+                    self.archivosJson.append(str(file))
+                    self.listJsons.addItem(nombreArchivo)
+                    self.dicImagenes = respusta[0]
+                    self.listaTickets = respusta[1]
+                    self.directorio = self.dicImagenes["Dir"]["NomCarpeta"]
+                    for x in range (len(self.dicImagenes["Imagenes"])):
+                        imgNom = self.dicImagenes ["Imagenes"]["Imagen_"+str(x)][0]["NombreImagen"]
+                        self.listImagenes.addItem(imgNom)
+        else:
+            file, _ = QFileDialog.getOpenFileName(self, 'Buscar Archivo', QDir.homePath(), "All Files (*);;Json Files (*.json)")
+            rutaArchivo = str(file)
+            respusta = cargarArchivo(rutaArchivo)
+            nombreArchivo = os.path.basename(file)
+            if respusta == False:
+                msg = QMessageBox()
+                msg.setIcon(QMessageBox.Critical)
+                msg.setText("Error al abrir el archivo")
+                msg.setInformativeText('No se encontro el archivo Json o no cumple con las especificaciones')
+                msg.setWindowTitle("Error")
+                msg.exec_()
+            else:
+                self.listImagenes.clear()
+                self.archivosJson.append(str(file))
+                self.listJsons.addItem(nombreArchivo)
+                self.dicImagenes = respusta[0]
+                self.listaTickets = respusta[1]
+                self.directorio = self.dicImagenes["Dir"]["NomCarpeta"]
+                for x in range (len(self.dicImagenes["Imagenes"])):
+                    imgNom = self.dicImagenes ["Imagenes"]["Imagen_"+str(x)][0]["NombreImagen"]
+                    self.listImagenes.addItem(imgNom) 
+            
     #Funcion para abir el repositorio 
     def abirRepo(self):
-        self.directorio = str(QFileDialog.getExistingDirectory(self,"Select Directory"))#Abre el explorador de archivos solo mostrando carpetas y toma la ruta de la carpeta
-        if self.directorio == "":#If para verificar que selecciona una carpeta
-            #Inicializa y muestra el mensaje de error
+        if(len(self.listaTickets)==0):
+            self.directorio = str(QFileDialog.getExistingDirectory(self,"Seleccionar Carpeta"))#Abre el explorador de archivos solo mostrando carpetas y toma la ruta de la carpeta
+            if self.directorio == "":#If para verificar que selecciona una carpeta
+                #Inicializa y muestra el mensaje de error
+                msg = QMessageBox()
+                #msg.setIcon(QMessageBox.Critical)
+                msg.setText("Error al abrir carpeta")
+                msg.setInformativeText('Seleccione una carpeta')
+                msg.setWindowTitle("Error")
+                msg.exec_()
+                self.listImagenes.clear()
+            else:#En dado caso de abrir la carpeta se ejecuta el siguiente codigo
+                self.listImagenes.clear()#Limpa el widgetList para los objetos entrantes
+                self.listaTickets,self.dicImagenes = cargarCarpeta(self.directorio)#Hace una lista de los archivos dentro de la ruta que se tomo anteriormente
+                for x in range (len(self.dicImagenes["Imagenes"])):
+                    imgNom = self.dicImagenes ["Imagenes"]["Imagen_"+str(x)][0]["NombreImagen"]
+                    self.listImagenes.addItem(imgNom)
+        else:
+            qm = QMessageBox
+            ret = qm.question(self,'', "Ya se tiene una carpeta abierta, ¿Desea guardar el trabajo realizado?", qm.Yes | qm.No)
+            if ret == qm.Yes:
+                file, _ = QFileDialog.getSaveFileName(self, 'Guardar Archivo', QDir.homePath(), "All Files (*);;Json Files (*.json)")
+                if file:
+                    nombre = os.path.basename(file)
+                    guardarJson(self.listaTickets,self.dicImagenes,str(file))
+                    self.archivosJson.append(str(file))
+                    self.listJsons.addItem(nombre)
+                    self.directorio = str(QFileDialog.getExistingDirectory(self,"Seleccionar Carpeta"))
+                    if self.directorio !="":
+                        self.listImagenes.clear()
+                        self.listaTickets,self.dicImagenes = cargarCarpeta(self.directorio)#Hace una lista de los archivos dentro de la ruta que se tomo anteriormente
+                        for x in range (len(self.dicImagenes["Imagenes"])):
+                            imgNom = self.dicImagenes ["Imagenes"]["Imagen_"+str(x)][0]["NombreImagen"]
+                            self.listImagenes.addItem(imgNom)
+            if ret == qm.No:
+                self.directorio = str(QFileDialog.getExistingDirectory(self,"Seleccionar Carpeta"))#Abre el explorador de archivos solo mostrando carpetas y toma la ruta de la carpeta
+                if self.directorio == "":#If para verificar que selecciona una carpeta
+                    #Inicializa y muestra el mensaje de error
+                    msg = QMessageBox()
+                    #msg.setIcon(QMessageBox.Critical)
+                    msg.setText("Error al abrir carpeta")
+                    msg.setInformativeText('Seleccione una carpeta')
+                    msg.setWindowTitle("Error")
+                    msg.exec_()
+                    self.listImagenes.clear()
+                else:#En dado caso de abrir la carpeta se ejecuta el siguiente codigo
+                    self.listImagenes.clear()#Limpa el widgetList para los objetos entrantes
+                    self.listaTickets,self.dicImagenes = cargarCarpeta(self.directorio)#Hace una lista de los archivos dentro de la ruta que se tomo anteriormente
+                    for x in range (len(self.dicImagenes["Imagenes"])):
+                        imgNom = self.dicImagenes ["Imagenes"]["Imagen_"+str(x)][0]["NombreImagen"]
+                        self.listImagenes.addItem(imgNom)
+
+
+    def selectJson(self):
+        indice = self.listJsons.currentRow()
+        respusta = cargarArchivo(self.archivosJson[indice])
+        if respusta == False:
             msg = QMessageBox()
-            #msg.setIcon(QMessageBox.Critical)
-            msg.setText("Error al abrir carpeta")
-            msg.setInformativeText('Seleccione una carpeta')
+            msg.setIcon(QMessageBox.Critical)
+            msg.setText("Error al abrir el archivo")
+            msg.setInformativeText('No se encontro el archivo Json predeterminado o no cumple con las especificaciones')
             msg.setWindowTitle("Error")
             msg.exec_()
+        else:
             self.listImagenes.clear()
-        else:#En dado caso de abrir la carpeta se ejecuta el siguiente codigo
-            self.listImagenes.clear()#Limpa el widgetList para los objetos entrantes
-            archivos = os.listdir(self.directorio)#Hace una lista de los archivos dentro de la ruta que se tomo anteriormente
-            self.dicImagenes = {}
-            self.dicImagenes["Imagenes"]=[]
-            self.dicImagen = {}
-            
-            #print(len(self.listaTickets))
-            cont=0
-            for i in range (len(archivos)):#Ciclo para revisar todos los archivos de la carpeta abierta
-                if archivos[i].endswith(".png") or archivos[i].endswith(".jpg") or archivos[i].endswith(".jpeg"):
-                    self.listImagenes.addItem(str(archivos[i]))#Enlista solo los archivos que sean tipo imagen(Terminaciones png, jpg, jpeg)
-                    self.dicImagen["Imagen_"+str(cont)]=[]
-                    self.dicImagen["Imagen_"+str(cont)].append({"NombreImagen":archivos[i]})
-                    cont=cont+1
-            self.listaTickets = [[]] * len(self.dicImagen)
-            self.dicImagenes["Imagenes"]=self.dicImagen
-            self.dicImagenes["Dir"]={"NomCarpeta":self.directorio}
-        #     #print(self.dicImagenes)
-            #with open('data.json', 'w') as file:
-                #json.dump(self.dicImagenes, file, indent=2)
-            #print(self.dicImagenes)
-    
+            self.dicImagenes = respusta[0]
+            self.listaTickets = respusta[1]
+            self.directorio = self.dicImagenes["Dir"]["NomCarpeta"]
+            for x in range (len(self.dicImagenes["Imagenes"])):
+                imgNom = self.dicImagenes ["Imagenes"]["Imagen_"+str(x)][0]["NombreImagen"]
+                self.listImagenes.addItem(imgNom)
+
     #Funcion del listWidget para seleccionar la imagen
     def selectImg(self):
         self.nombreImagen = self.listImagenes.currentItem().text()#Toma el texto del item seleccionado

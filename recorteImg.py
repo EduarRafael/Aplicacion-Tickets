@@ -120,7 +120,7 @@ def dibujarRegiones(img,coords=[]):
         cv2.rectangle(img,(coords[x][0][0],coords[x][0][1]),(coords[x][3][0],coords[x][3][1]),(0,255,0),2)
     return img
 
-def guardarJson(listaTickets,dicImagenes):
+def guardarJson(listaTickets,dicImagenes,archivo):
     for x in range(len(listaTickets)):
         if len(listaTickets[x])==0:
             pass
@@ -145,13 +145,17 @@ def guardarJson(listaTickets,dicImagenes):
             #print(dicTicket)
             dicImagenes["Imagenes"]["Imagen_"+str(x)].append(dicTicket)#Se agrega el ticket y sus correspondientes regiones a la imagen correspondiente
     #print(dicImagenes)
-    with open('data.json', 'w') as file:#El archivo se guarda con el nombre data.json
-        json.dump(dicImagenes, file, indent=2)#Se le pasa el diccionario con las imagenes, con sus correspondientes ticketes y las correspondientes regiones por ticket
+    if archivo == "":
+        with open('data.json', 'w') as file:#El archivo se guarda con el nombre data.json
+            json.dump(dicImagenes, file, indent=2)#Se le pasa el diccionario con las imagenes, con sus correspondientes ticketes y las correspondientes regiones por ticket
+    else:
+        with open(archivo, 'w') as file:#El archivo se guarda con el nombre data.json
+            json.dump(dicImagenes, file, indent=2)#Se le pasa el diccionario con las imagenes, con sus correspondientes ticketes y las correspondientes regiones por ticket
 
 
-def cargarArchivo():
+def cargarArchivo(nombreArchivo):
     try:
-        with open("data.json") as contenido:
+        with open(nombreArchivo) as contenido:
             jdata = json.load(contenido)
             carpeta = jdata["Dir"]["NomCarpeta"]
             if os.path.isdir(carpeta):
@@ -198,3 +202,20 @@ def cargarArchivo():
                 return False   
     except:
         return False
+
+def cargarCarpeta(directorio):
+    archivos = os.listdir(directorio)#Hace una lista de los archivos dentro de la ruta que se tomo anteriormente
+    dicImagenes = {}
+    dicImagenes["Imagenes"]=[]
+    dicImagen = {}
+    #print(len(self.listaTickets))
+    cont=0
+    for i in range (len(archivos)):#Ciclo para revisar todos los archivos de la carpeta abierta
+        if archivos[i].endswith(".png") or archivos[i].endswith(".jpg") or archivos[i].endswith(".jpeg"):
+            dicImagen["Imagen_"+str(cont)]=[]
+            dicImagen["Imagen_"+str(cont)].append({"NombreImagen":archivos[i]})
+            cont=cont+1
+    listaTickets = [[]] * len(dicImagen)
+    dicImagenes["Imagenes"]=dicImagen
+    dicImagenes["Dir"]={"NomCarpeta":directorio}
+    return listaTickets,dicImagenes
