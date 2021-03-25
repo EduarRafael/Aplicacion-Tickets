@@ -221,15 +221,16 @@ class  mainWindow(QDialog):
 
     def selectJson(self):
         indice = self.listJsons.currentRow()
-        respusta = cargarArchivo(self.archivosJson[indice])
+        respusta = cargarArchivo(self.archivosJson[indice])#Carga el archivo que se selecciono en el listJson
         if respusta == False:
-            msg = QMessageBox()
+            msg = QMessageBox()#En dado caso de fallar manda un error 
             msg.setIcon(QMessageBox.Critical)
             msg.setText("Error al abrir el archivo")
             msg.setInformativeText('No se encontro el archivo Json predeterminado o no cumple con las especificaciones')
             msg.setWindowTitle("Error")
             msg.exec_()
         else:
+            #En dado caso de encontrar y cargar el archivo, quita el trabajo que se tiene y se carga el del archivo seleccionado
             self.listImagenes.clear()
             self.dicImagenes = respusta[0]
             self.listaTickets = respusta[1]
@@ -284,11 +285,12 @@ class  mainWindow(QDialog):
         self.imagen_1.setPixmap(imagen)#Se añade la imagen al label
 
     def guardarInfoTicket(self):
-        indiceTicketFecha = self.comboTicket.currentIndex()
+        indiceTicketFecha = self.comboTicket.currentIndex()#Se selecciona el ticket que se va aguardar la informacion
         try:
             self.listaTickets[self.indice][indiceTicketFecha].setFecha(str(self.fechaEdit.date().toString("d/M/yyyy")))#Toma la fecha del widget con la salida: 1/1/2021(Ejemplo)
             self.listaTickets[self.indice][indiceTicketFecha].setEstablecimiento(self.establecimientoEdit.text()) #Toma el texto del widget
         except:
+            #En dado caso de no existir algun ticket manda un mensaje de error
             msg = QMessageBox()
             msg.setText("Error")
             msg.setInformativeText('Seleccione una ticket')
@@ -296,37 +298,38 @@ class  mainWindow(QDialog):
             msg.exec_()
 
     def cambioTicket(self):
-        self.indiceTicket = self.comboTicket.currentIndex()
-        img = recortarImagen(self.imagencv2,self.listaTickets[self.indice][self.indiceTicket].getCoords())
-        img = formatoPixMap(img)
+        self.indiceTicket = self.comboTicket.currentIndex()#Se selecciona el indice del ticket
+        img = recortarImagen(self.imagencv2,self.listaTickets[self.indice][self.indiceTicket].getCoords()) #Se recorta la imagen del ticket seleccionado
+        img = formatoPixMap(img)#Se cambia a formato pixmap
         imgW = round(37/100*self.anchowin)
         imgH = round(67.59/100*self.alturawin)
-        img = img.scaled(imgW,imgH)
-        self.img_ticket.setPixmap(img)
+        img = img.scaled(imgW,imgH)#Se escala para una mejor vista del usuario
+        self.img_ticket.setPixmap(img)#Se mustra en el label
         self.establecimientoEdit.setText(self.listaTickets[self.indice][self.indiceTicket].getEstablecimiento())#Muestra el nombre del establecimiento en el QLineEdit
-        if self.listaTickets[self.indice][self.indiceTicket].getFecha()=="":
+        if self.listaTickets[self.indice][self.indiceTicket].getFecha()=="":#Verifica que la fecha no este vacia
             fechaWidget = QDate(2021,1,11)
-            self.fechaEdit.setDate(fechaWidget)
+            self.fechaEdit.setDate(fechaWidget)#En dado caso de estar vacia pone una predeterminada
         else:
-            fecha = self.listaTickets[self.indice][self.indiceTicket].getFecha()
-            fecha = datetime.strptime(fecha, '%d/%m/%Y')
-            dia,mes,año = fecha.day,fecha.month,fecha.year
-            fechaWidget = QDate(año,mes,dia)
-            self.fechaEdit.setDate(fechaWidget)
+            fecha = self.listaTickets[self.indice][self.indiceTicket].getFecha()#En dado caso de tener una fecha 
+            fecha = datetime.strptime(fecha, '%d/%m/%Y')#Se convierte en un objeto datatime
+            dia,mes,anio = fecha.day,fecha.month,fecha.year#Con el objeto datatime extraemos el dia, mes y anio 
+            fechaWidget = QDate(anio,mes,dia)#Se convierte la fecha en un tipo QDate
+            self.fechaEdit.setDate(fechaWidget)#Se añade el qdate al Widget
 
     def eliminarTicket(self):
         numTickets= self.comboTicket.count()
-        if(numTickets>=1):
+        if(numTickets>=1):#Verifica que exista al menos 1 ticket
             qm = QMessageBox
-            ret = qm.question(self,'', "¿Estas seguro de eliminar este ticket? Esta accion no se puede revertir", qm.Yes | qm.No)
-            if ret == qm.Yes:
-                self.indiceTicket = self.comboTicket.currentIndex()
-                self.comboTicket.removeItem(self.indiceTicket)
-                self.listaTickets[self.indice].pop(self.indiceTicket)
-                numTickets= self.comboTicket.count()
+            ret = qm.question(self,'', "¿Estas seguro de eliminar este ticket? Esta accion no se puede revertir", qm.Yes | qm.No)#PopUp de la pregunta para eliminar ticket
+            if ret == qm.Yes:#En dado caso de que la respuesa sea sí, elimina el ticket
+                self.indiceTicket = self.comboTicket.currentIndex()#Se toma el ticket seleccionado
+                self.comboTicket.removeItem(self.indiceTicket)#Se elimiina el ticket del widget
+                self.listaTickets[self.indice].pop(self.indiceTicket)#Se elimina de la lista de tickets
+                numTickets= self.comboTicket.count()#Cuenta los tickets existentes
                 if (numTickets==0):
-                    self.img_ticket.hide()
+                    self.img_ticket.hide()#En dado caso de no tener más tickets se oculta la imagen
                 elif (numTickets>=1):
+                    #En dado caso de que quede al menos 1 ticket, se selecciona ese para mostrarlo 
                     img = recortarImagen(self.imagencv2,self.listaTickets[self.indice][0].getCoords())
                     img = formatoPixMap(img)
                     imgW = round(37/100*self.anchowin)
@@ -335,6 +338,7 @@ class  mainWindow(QDialog):
                     self.comboTicket.setCurrentIndex(0)
                     self.img_ticket.setPixmap(img)
         elif(numTickets==0):
+            #En dado caso de no tener tickets manda un mensaje de error
             msg = QMessageBox()
             #msg.setIcon(QMessageBox.Critical)
             msg.setText("Error al eliminar ticket")
@@ -351,23 +355,25 @@ class  mainWindow(QDialog):
             msg.setWindowTitle("Error")
             msg.exec_() 
         elif(self.imagenSeleccionada == True):
+            #Sí existe una imagen seleccionada se procede a abrir la ventana para el recorte
+            #Se ocultan ciertos componentes para empezar con la vista de las intrucciones y el boton de continuar
             self.recorteTicketD.cortarImagenbtn.hide()
             self.recorteTicketD.guardarbtn.hide()
             self.recorteTicketD.comboNuevasRegiones.hide()
             self.recorteTicketD.labelRegionMsg.hide()
             self.recorteTicketD.continuarbtn.show()
             #
-            imgW = round(39/100*self.anchowin)
-            imgH = round(32/100*self.alturawin)
-            self.recorteTicketD.resize(imgW,imgH)
-            self.recorteTicketD.move(round(self.anchowin/3),round(self.alturawin/3))
-            self.recorteTicketD.setModal(True)
+            dialogW = round(39/100*self.anchowin)
+            dialogH = round(32/100*self.alturawin)
+            self.recorteTicketD.resize(dialogW,dialogH)#Se redimensiona el dialogo dependiendo del tamaño de la pantalla
+            self.recorteTicketD.move(round(self.anchowin/3),round(self.alturawin/3))#Se mueve al centro de la pantalla
+            self.recorteTicketD.setModal(True)#Se coloca como modal
             #
-            self.recorteTicketD.imagen = self.imagencv2
-            self.recorteTicketD.indiceImagen= self.indice
-            self.recorteTicketD.nombreImagen= self.nombreImagen
+            self.recorteTicketD.imagen = self.imagencv2#Se pasa la imagen seleccionada para poder utilizarla en el recorte
+            self.recorteTicketD.indiceImagen= self.indice#Se pasa el indice de la imagen seleccionada para poder acceder a la listTickets
+            self.recorteTicketD.nombreImagen= self.nombreImagen#Se pasa el nombre de la imagen que se utiliza para colocar el nombre a los tickets
             #
-            self.recorteTicketD.show()
+            self.recorteTicketD.show()#Se muestra el dialogo 
 
 
     def vistaTicketDialog(self):
