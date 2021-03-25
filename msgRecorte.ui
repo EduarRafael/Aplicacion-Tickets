@@ -9,7 +9,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>744</width>
+    <width>854</width>
     <height>463</height>
    </rect>
   </property>
@@ -67,7 +67,7 @@
       </font>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Para realizar el recorte siga los siguientes pasos:&lt;/p&gt;&lt;p&gt;En la ventana de la imagen seleccione con click izquierdo donde empezara la region y&lt;/p&gt;&lt;p&gt;arrastre hasta donde desea que esta termine.&lt;/p&gt;&lt;p&gt;Al seleccionar la region dar &amp;quot;Enter&amp;quot; para guardar la seleccion.&lt;/p&gt;&lt;p&gt;Puede reinicar la seleccion con la tecla &amp;quot;C&amp;quot;.&lt;/p&gt;&lt;p&gt;Para terminar los recortes utilice la tecla &amp;quot;ESC&amp;quot;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Para realizar el recorte siga los siguientes pasos:&lt;/p&gt;&lt;p&gt;En la ventana de la imagen seleccione con click izquierdo donde empezara la region y&lt;/p&gt;&lt;p&gt;arrastre hasta donde desea que esta termine.&lt;/p&gt;&lt;p&gt;Al seleccionar la region utilice la tecla &amp;quot;Enter&amp;quot;o &amp;quot;Barra espaciadora&amp;quot; para guardar la seleccion.&lt;/p&gt;&lt;p&gt;Puede reinicar la seleccion con la tecla &amp;quot;C&amp;quot;.&lt;/p&gt;&lt;p&gt;Para terminar los recortes utilice la tecla &amp;quot;ESC&amp;quot;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
