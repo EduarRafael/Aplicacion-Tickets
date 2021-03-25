@@ -49,7 +49,7 @@ class  mainWindow(QDialog):
         self.alturaImg = round(85/100*self.alturawin)
         self.contRegiones=0
         self.imagenSeleccionada = False
-        ##
+        #Carga automatica de archivo
         respusta = cargarArchivo()
         if respusta == False:
             msg = QMessageBox()
@@ -66,6 +66,7 @@ class  mainWindow(QDialog):
                 imgNom = self.dicImagenes ["Imagenes"]["Imagen_"+str(x)][0]["NombreImagen"]
                 self.listImagenes.addItem(imgNom)
         #Declaracion de objetos de las vistas
+        self.listJsons.hide()
         self.recorteTicketD = recorteTicket(self)#Objeto para dialogo del recorte del ticket  
         self.vistaTicketD = vistaTicket(self)
         #Declaracion de eventos de los botones/widgets
