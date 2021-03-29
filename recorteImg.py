@@ -175,6 +175,7 @@ def cargarArchivo(nombreArchivo):
 
                     if len(jdata["Imagenes"]["Imagen_"+str(x)])>1:#Sí entra a este if significa que la imagen tiene tickets recortados
                         #print(len(jdata["Imagenes"]["Imagen_"+str(x)]))
+                        
                         for i in range (1,len(jdata["Imagenes"]["Imagen_"+str(x)])):
                             listaux = []
                             for j in range (len(jdata["Imagenes"]["Imagen_"+str(x)][i]["Ticket"])):
