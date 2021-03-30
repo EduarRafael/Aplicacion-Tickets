@@ -47,7 +47,6 @@ class vistaTicket(QDialog):
             self.anchowin, self.alturawin = user32.GetSystemMetrics(0), user32.GetSystemMetrics(1)
         self.auxParent = parent
         self.recorteRegionD = recorteRegion(self)
-        self.anchowin, self.alturawin = user32.GetSystemMetrics(0), user32.GetSystemMetrics(1)
         self.widthImg = round(85/100*self.anchowin)
         self.heightImg = round(85/100*self.alturawin)
         #Declaracion de eventos de los botones

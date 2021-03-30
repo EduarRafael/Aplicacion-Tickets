@@ -100,6 +100,7 @@ class recorteTicket(QDialog):
         self.continuarbtn.hide()
         self.puntos=[]
         listaPuntos = []
+        ROIs = []
         self.aux = self.imagen.copy()
         cv2.namedWindow("Imagen",cv2.WINDOW_NORMAL)
         cv2.resizeWindow("Imagen",self.anchoImg,self.alturaImg)
@@ -113,7 +114,7 @@ class recorteTicket(QDialog):
             listaPuntos = [[x1,y1],[(x2+x1),y1],[x1,(y1+y2)],[(x1+x2),(y1+y2)]]
             self.puntos.append(listaPuntos)
         #        
-        for i in range (len(ROIs)):
+        for i in range(len(ROIs)):
             self.comboNuevasRegiones.addItem("Region "+str(i+1))
         if len(self.puntos)>=1:
             self.dst = recortarImagen(self.aux,self.puntos[0])

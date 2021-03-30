@@ -398,6 +398,7 @@ class  mainWindow(QDialog):
                     #Se añade el nombre de las regiones al comboBox
                     self.vistaTicketD.comboRegion.addItem(nombreRegion)  
             elif len(regiones)>1:
+                print("Ya tenia regiones")
                 #Si el ticket seleccionado tiene regiones procesadas, se cargan en el dialogo
                 arrayRegionesCoords = self.listaTickets[self.indice][self.indiceTicket].getCoordsRegiones()#Obtiene las coordenadas de las regiones
                 arrayNombresRegiones = self.listaTickets[self.indice][self.indiceTicket].getNombresRegiones()#Obtiene los nombres de las regiones
