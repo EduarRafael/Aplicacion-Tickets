@@ -1,75 +1,198 @@
 {
   "Dir": {
-    "NomCarpeta": "C:/Users/PC/Desktop/TicketsExperimentos"
+    "NomCarpeta": "C:/Users/PC/Desktop/Estancia/Proyecto/FotosTickets/2018"
   },
   "Imagenes": {
     "Imagen_0": [
       {
-        "NombreImagen": "Experimiento_1.jpg"
+        "NombreImagen": "20180228_110303.jpg"
       }
     ],
     "Imagen_1": [
       {
-        "NombreImagen": "Experimiento_2.jpg"
+        "NombreImagen": "20180228_110307.jpg"
       }
     ],
     "Imagen_2": [
       {
-        "NombreImagen": "Experimiento_3.jpg"
+        "NombreImagen": "20180303_151101.jpg"
       }
     ],
     "Imagen_3": [
       {
-        "NombreImagen": "Experimiento_4.jpg"
+        "NombreImagen": "20180312_075128.jpg"
       }
     ],
     "Imagen_4": [
       {
-        "NombreImagen": "Experimiento_5.jpg"
+        "NombreImagen": "20180320_081229.jpg"
+      }
+    ],
+    "Imagen_5": [
+      {
+        "NombreImagen": "20180320_081239.jpg"
+      }
+    ],
+    "Imagen_6": [
+      {
+        "NombreImagen": "20180402_094203.jpg"
+      }
+    ],
+    "Imagen_7": [
+      {
+        "NombreImagen": "20180402_094207.jpg"
+      }
+    ],
+    "Imagen_8": [
+      {
+        "NombreImagen": "20180409_132243.jpg"
+      }
+    ],
+    "Imagen_9": [
+      {
+        "NombreImagen": "20180420_082951.jpg"
+      }
+    ],
+    "Imagen_10": [
+      {
+        "NombreImagen": "20180421_151135.jpg"
+      }
+    ],
+    "Imagen_11": [
+      {
+        "NombreImagen": "20180430_104359.jpg"
+      }
+    ],
+    "Imagen_12": [
+      {
+        "NombreImagen": "20180505_145443.jpg"
+      }
+    ],
+    "Imagen_13": [
+      {
+        "NombreImagen": "20180514_112111.jpg"
+      }
+    ],
+    "Imagen_14": [
+      {
+        "NombreImagen": "20180521_093054.jpg"
+      }
+    ],
+    "Imagen_15": [
+      {
+        "NombreImagen": "20180530_163944.jpg"
+      }
+    ],
+    "Imagen_16": [
+      {
+        "NombreImagen": "20180530_163955.jpg"
+      }
+    ],
+    "Imagen_17": [
+      {
+        "NombreImagen": "20180603_092058.jpg"
+      }
+    ],
+    "Imagen_18": [
+      {
+        "NombreImagen": "20180609_145941.jpg"
+      }
+    ],
+    "Imagen_19": [
+      {
+        "NombreImagen": "20180616_144851.jpg"
+      }
+    ],
+    "Imagen_20": [
+      {
+        "NombreImagen": "20180616_144856.jpg"
+      }
+    ],
+    "Imagen_21": [
+      {
+        "NombreImagen": "20180627_094738.jpg"
+      }
+    ],
+    "Imagen_22": [
+      {
+        "NombreImagen": "20180702_080402.jpg"
+      }
+    ],
+    "Imagen_23": [
+      {
+        "NombreImagen": "20180709_081628.jpg"
+      }
+    ],
+    "Imagen_24": [
+      {
+        "NombreImagen": "20180709_081633.jpg"
       },
       {
         "Ticket": [
           {
-            "Nomticket": "Ticket_1_Experimiento_5.jpg",
+            "Nomticket": "Ticket_1_20180709_081633.jpg",
             "CoordsTicket": [
               [
-                263,
-                752
+                78,
+                1218
               ],
               [
-                1080,
-                752
+                674,
+                1218
               ],
               [
-                263,
-                3598
+                78,
+                2945
               ],
               [
-                1080,
-                3598
+                674,
+                2945
               ]
             ],
             "FechaTicket": "",
             "EstablecimientoTicket": ""
           },
           {
-            "Nomticket": "Ticket_2_Experimiento_5.jpg",
+            "Nomticket": "Ticket_2_20180709_081633.jpg",
             "CoordsTicket": [
               [
-                1349,
-                1250
+                868,
+                996
               ],
               [
-                2144,
-                1250
+                1597,
+                996
               ],
               [
-                1349,
-                3135
+                868,
+                3244
               ],
               [
-                2144,
-                3135
+                1597,
+                3244
+              ]
+            ],
+            "FechaTicket": "",
+            "EstablecimientoTicket": ""
+          },
+          {
+            "Nomticket": "Ticket_3_20180709_081633.jpg",
+            "CoordsTicket": [
+              [
+                1681,
+                1386
+              ],
+              [
+                2330,
+                1386
+              ],
+              [
+                1681,
+                3113
+              ],
+              [
+                2330,
+                3113
               ]
             ],
             "FechaTicket": "",
@@ -78,44 +201,149 @@
         ]
       }
     ],
-    "Imagen_5": [
+    "Imagen_25": [
       {
-        "NombreImagen": "TicketProcesado_1.1.jpg"
+        "NombreImagen": "20180722_102724.jpg"
       }
     ],
-    "Imagen_6": [
+    "Imagen_26": [
       {
-        "NombreImagen": "TicketProcesado_1.2.jpg"
+        "NombreImagen": "20180729_110522.jpg"
       }
     ],
-    "Imagen_7": [
+    "Imagen_27": [
       {
-        "NombreImagen": "TicketProcesado_2.jpg"
+        "NombreImagen": "20180729_110543.jpg"
       }
     ],
-    "Imagen_8": [
+    "Imagen_28": [
       {
-        "NombreImagen": "TicketProcesado_3.jpg"
+        "NombreImagen": "20180806_133708.jpg"
       }
     ],
-    "Imagen_9": [
+    "Imagen_29": [
       {
-        "NombreImagen": "Ticket_1.1.jpg"
+        "NombreImagen": "20180806_133728.jpg"
       }
     ],
-    "Imagen_10": [
+    "Imagen_30": [
       {
-        "NombreImagen": "Ticket_1.2.jpg"
+        "NombreImagen": "20180806_133736.jpg"
       }
     ],
-    "Imagen_11": [
+    "Imagen_31": [
       {
-        "NombreImagen": "Ticket_2.jpg"
+        "NombreImagen": "20180813_075303.jpg"
       }
     ],
-    "Imagen_12": [
+    "Imagen_32": [
       {
-        "NombreImagen": "Ticket_3.jpg"
+        "NombreImagen": "20180813_081342.jpg"
+      }
+    ],
+    "Imagen_33": [
+      {
+        "NombreImagen": "20180813_083100.jpg"
+      }
+    ],
+    "Imagen_34": [
+      {
+        "NombreImagen": "20180821_074158.jpg"
+      }
+    ],
+    "Imagen_35": [
+      {
+        "NombreImagen": "20180821_074202.jpg"
+      }
+    ],
+    "Imagen_36": [
+      {
+        "NombreImagen": "20180827_071947.jpg"
+      }
+    ],
+    "Imagen_37": [
+      {
+        "NombreImagen": "20180903_102018.jpg"
+      }
+    ],
+    "Imagen_38": [
+      {
+        "NombreImagen": "20180917_072547.jpg"
+      }
+    ],
+    "Imagen_39": [
+      {
+        "NombreImagen": "20180927_102949.jpg"
+      }
+    ],
+    "Imagen_40": [
+      {
+        "NombreImagen": "20180927_102951.jpg"
+      }
+    ],
+    "Imagen_41": [
+      {
+        "NombreImagen": "20181001_150909.jpg"
+      }
+    ],
+    "Imagen_42": [
+      {
+        "NombreImagen": "20181010_141259.jpg"
+      }
+    ],
+    "Imagen_43": [
+      {
+        "NombreImagen": "20181020_123212.jpg"
+      }
+    ],
+    "Imagen_44": [
+      {
+        "NombreImagen": "20181020_123419.jpg"
+      }
+    ],
+    "Imagen_45": [
+      {
+        "NombreImagen": "20181029_071547.jpg"
+      }
+    ],
+    "Imagen_46": [
+      {
+        "NombreImagen": "20181105_102206.jpg"
+      }
+    ],
+    "Imagen_47": [
+      {
+        "NombreImagen": "20181112_102111.jpg"
+      }
+    ],
+    "Imagen_48": [
+      {
+        "NombreImagen": "20181119_143152.jpg"
+      }
+    ],
+    "Imagen_49": [
+      {
+        "NombreImagen": "20181201_083615.jpg"
+      }
+    ],
+    "Imagen_50": [
+      {
+        "NombreImagen": "20181215_170625.jpg"
+      }
+    ],
+    "Imagen_51": [
+      {
+        "NombreImagen": "20181215_170735.jpg"
+      }
+    ],
+    "Imagen_52": [
+      {
+        "NombreImagen": "20181215_170811.jpg"
+      }
+    ],
+    "Imagen_53": [
+      {
+        "NombreImagen": "20181215_170845.jpg"
       }
     ]
   }
