@@ -21,7 +21,7 @@ class RegionTicket:
 
     #Define el texto por el usuario 
     def setTextOCR(self,t):
-        self.texto = t
+        self.textoOcr = t
 
     def getTextoUsuario(self):
         return self.textoUsuario
@@ -77,6 +77,12 @@ class Ticket:
     #Retorna las coordenadas del ticket recortado en la imagen original
     def getCoords(self):
         return self.puntos
+
+    def getTextRegion(self,index):
+        return self.regiones[index].getTextoUsuario()
+    
+    def getTextRegionOCR(self,index):
+        return self.regiones[index].getTextoOCR()
 
     #Retorna una region(Nombre de region y sus coordenadas) del ticket por id
     def getRegionbyIndex(self,index):

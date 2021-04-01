@@ -103,6 +103,7 @@ class vistaTicket(QDialog):
             self.TicketAux.setTextOCRRegion(textoOCR,indexRegion)
             self.TicketAux.setTextoUsuarioRegion(textoUsuario,indexRegion)
             msg = QMessageBox()
+            self.txtUsuario.setPlainText("")
             msg.setText("El texto se guardo correctamente")
             #msg.setInformativeText('Seleccione un ticket para procesar')
             msg.setWindowTitle("Exito!")
@@ -141,11 +142,21 @@ class vistaTicket(QDialog):
     def seleccionarRegion(self):
         indexRegion = self.comboRegion.currentIndex()
         coords = self.TicketAux.getCoordsRegionbyIndex(indexRegion)
+        textoUsuario = self.TicketAux.getTextRegion(indexRegion)
+        textoOCR = self.TicketAux.getTextRegionOCR(indexRegion)
+        if (textoUsuario == "" and textoOCR ==""):
+            textoOCR = procesarTexto(self.imagenTicket,coords)
+            self.txtOCR.setPlainText(textoOCR)
+            self.txtUsuario.setPlainText(textoUsuario)
+        elif(textoUsuario != ""):
+            self.txtOCR.setPlainText(textoOCR)
+            self.txtUsuario.setPlainText(textoUsuario)
+        elif(textoOCR!="" and textoUsuario==""):
+            self.txtOCR.setPlainText(textoOCR)
+            self.txtUsuario.setPlainText(textoUsuario)
         auxImagen = self.imagenTicket.copy()
         imgRegion = dibujarRegion(auxImagen,coords)
         imgRegionSola = recortarImagen(self.imagenTicket,coords)
-        texto = procesarTexto(self.imagenTicket,coords)
-        self.txtOCR.setPlainText(texto)
         imgRegionSola = recortarImagen(self.imagenTicket,coords)
         imgRegionSola = formatoPixMap(imgRegionSola)
         self.imagen_region.setPixmap(imgRegionSola)
@@ -154,3 +165,4 @@ class vistaTicket(QDialog):
         imgH = round(78.7/100*self.alturawin)
         imgRegion = imgRegion.scaled(imgW,imgH)
         self.imagen_ticketlabel.setPixmap(imgRegion)
+         
