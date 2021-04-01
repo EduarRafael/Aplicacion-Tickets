@@ -741,8 +741,8 @@
                     508
                   ]
                 ],
-                "Texto OCR": "A000000004101000",
-                "Texto Usuario": "A000000004103000\n\f"
+                "Texto OCR": "",
+                "Texto Usuario": ""
               },
               {
                 "NomRegion": "Region_30_Ticket_1_Ticket_1.1.jpg",
@@ -787,8 +787,8 @@
                     550
                   ]
                 ],
-                "Texto OCR": "ODFC4FBBBFOABB24",
-                "Texto Usuario": "ov &e/T\n\nODFC4FBBBFOARB24\n\f"
+                "Texto OCR": "",
+                "Texto Usuario": ""
               },
               {
                 "NomRegion": "Region_32_Ticket_1_Ticket_1.1.jpg",
@@ -902,8 +902,8 @@
                     704
                   ]
                 ],
-                "Texto OCR": "IVA\nIEPS",
-                "Texto Usuario": "IEPS\n\f"
+                "Texto OCR": "",
+                "Texto Usuario": ""
               },
               {
                 "NomRegion": "Region_37_Ticket_1_Ticket_1.1.jpg",

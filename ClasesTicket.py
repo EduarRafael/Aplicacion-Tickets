@@ -49,11 +49,11 @@ class Ticket:
 
     #Define el texto del OCR
     def setTextOCRRegion(self,t,indice):
-        self.regiones[indice].setTextoUsuario(t)
+        self.regiones[indice].setTextOCR(t)
 
     #Define el texto por el usuario 
     def setTextoUsuarioRegion(self,t,indice):
-        self.regiones[indice].setTextOCR(t)
+        self.regiones[indice].setTextoUsuario(t)
 
     def eliminarRegionByIndex(self,indice):
         self.regiones.pop(indice)
