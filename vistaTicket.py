@@ -144,14 +144,11 @@ class vistaTicket(QDialog):
         coords = self.TicketAux.getCoordsRegionbyIndex(indexRegion)
         textoUsuario = self.TicketAux.getTextRegion(indexRegion)
         textoOCR = self.TicketAux.getTextRegionOCR(indexRegion)
-        if (textoUsuario == "" and textoOCR ==""):
+        if (textoOCR ==""):
             textoOCR = procesarTexto(self.imagenTicket,coords)
             self.txtOCR.setPlainText(textoOCR)
             self.txtUsuario.setPlainText(textoUsuario)
-        elif(textoUsuario != ""):
-            self.txtOCR.setPlainText(textoOCR)
-            self.txtUsuario.setPlainText(textoUsuario)
-        elif(textoOCR!="" and textoUsuario==""):
+        else:
             self.txtOCR.setPlainText(textoOCR)
             self.txtUsuario.setPlainText(textoUsuario)
         auxImagen = self.imagenTicket.copy()
